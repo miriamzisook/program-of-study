@@ -11,13 +11,27 @@ body {
 	font-size:14px;
 }
 
+#nav {
+	text-align: center
+}
+
+
 a {
-	color: chocolate;
+	color: gray;
+}
+
+.postImg {
+	width: 20vw;
+}
+.button {
+	margin: 20px;
+	text-align: center;
+	font-family: inconsolata;
 }
 
 h1 {
-	font-family: "Comic Sans MS";
-	color: darkRed;
+	font-family: inconsolata;
+	color: darkGreen;
 	text-align: center;
 	margin-bottom: 6px;
 	font-size: 42px;
@@ -29,5 +43,4 @@ h2 {
 	margin-top:2vw;
 	margin-bottom:1vw;
 	font-weight:normal;
-
 }

@@ -1,0 +1,11 @@
+---
+layout: homepageTemplate
+---
+
+{% for post in site.posts %}
+<div class='postBlock'>
+<h3><a href="{{ post.url }}">{{ post.title }}</a> | {{ post.date | date: "%m.%d.%Y" }}</h3>
+{{ post.image}}
+<div class='postContent'>{{ post.content | markdown}}</div>
+</div>
+{% endfor %}

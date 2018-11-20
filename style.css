@@ -1,0 +1,33 @@
+
+
+@font-face {
+    font-family: inconsolata;
+    src: url(sansation_light.woff);
+}
+
+
+body {
+	font-family: 'Inconsolata', monospace;
+	font-size:14px;
+}
+
+a {
+	color: chocolate;
+}
+
+h1 {
+	font-family: "Comic Sans MS";
+	color: darkRed;
+	text-align: center;
+	margin-bottom: 6px;
+	font-size: 42px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 16px;
+	margin-top:2vw;
+	margin-bottom:1vw;
+	font-weight:normal;
+
+}

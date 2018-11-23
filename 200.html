@@ -1,8 +1,0 @@
----
-layout: homepageTemplate
----
-
-{% for post in site.posts %}
-<h3>{{ post.title }} | {{ post.date | date: "%m/%d/%Y" }}</h3>
-<p>{{ content | markdown}}</p>
-{% endfor %}

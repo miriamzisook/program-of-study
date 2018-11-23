@@ -2,6 +2,7 @@
 layout: homepageTemplate
 ---
 
+<div id='main-container'>
 {% for post in site.posts %}
 <div class='postBlock'>
 <h3><a href="{{ post.url }}">{{ post.title }}</a> | {{ post.date | date: "%m.%d.%Y" }}</h3>
@@ -9,3 +10,5 @@ layout: homepageTemplate
 <div class='postContent'>{{ post.content | markdown}}</div>
 </div>
 {% endfor %}
+
+</div>

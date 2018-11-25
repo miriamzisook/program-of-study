@@ -1,7 +1,0 @@
-.DS_Store
-_site/
-
-# Ignore default locations of imported notes, library, and release file for example
-import-evernote-for-jekyll/
-notes/
-v*.zip

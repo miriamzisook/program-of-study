@@ -3,11 +3,12 @@ var path = require('path'); // For manipulating file paths
 var HTMLParser = require('node-html-parser'); // For parsing exported HTML
 var assert = require('assert'); // For basic testing
 var pretty = require('pretty'); // For prettifying HTML
+var yaml = require('js-yaml'); // For creating YAML front-matter
 
 // A config object for holding our configuration information—
 var config = {
 	"import": {
-		"path": "../evernoteExport" // Where we've exported our Evernote notes to
+		"path": "../notes" // Where we've exported our Evernote notes to
 	},
 	"output": {
 		"posts_path": "../_evernotes", // Where we want to store processed posts
@@ -31,8 +32,8 @@ pathnames = fs.readdirSync(config.import.path).map(p => path.join(config.import.
 // Create an object for storing information about the original paths of our files
 var originals = {};
 
-// Filter paths for those ending in .html, removing Evernote's index.html
-originals.html_files = pathnames.filter(p => p.match(/\.html$/) && !p.match(/index\.html$/));
+// Filter paths for those ending in .html
+originals.html_files = pathnames.filter(p => p.match(/\.html$/));
 console.log("Found html_files:\n", originals.html_files);
 	
 // Filter paths for those which are directories whose name ends in .resources
@@ -46,22 +47,61 @@ originals.resourceFiles = originals.resourceFolders.map(function(rf) {
 	return paths;
 }).reduce((a, b) => a.concat(b));
 
+var querySelectorAllByAttribute = function(parsed, tag, key, value) {
+	var tags = parsed.querySelectorAll(tag);
+	var withKeys = tags.filter(t => key in t.attributes);
+	var withValue = withKeys.filter(k => k.attributes[key] == value);
+	return withValue;
+};
+
+var querySelectorByAttribute = function(parsed, tag, key, value) {
+	return querySelectorAllByAttribute(parsed, tag, key, value)[0];
+};
+
 // A function for extracting the body from an HTML file while rewriting media paths
 var getCleanBodyFrom = function(filename) {
 	var data = fs.readFileSync(filename, { "encoding": "utf-8" }); // Read the data
-	var body = HTMLParser.parse(data).querySelector('body').innerHTML; // Extract the body
+	var parsed = HTMLParser.parse(data);
+	var body = parsed.querySelector('body').innerHTML; // Extract the body
+
+	var frontMatter = {};
+	frontMatter.title = parsed.querySelector("title").innerHTML;
+	var metaAttrsToRetrieve = {
+		"dateCreated": 'created',
+		"dateUpdated": 'updated',
+		"author": 'author',
+		"tags": 'keywords'
+	};
+
+	var metaAttrFunctions = {
+		"tags": t => t.split(',').map(k => k.trim())
+	};
+
+	Object.keys(metaAttrsToRetrieve).forEach(function(attr) {
+		var element = querySelectorByAttribute(parsed, 'meta', 'name', metaAttrsToRetrieve[attr]);
+		if (element) {
+			var attributes = element.attributes;
+			var content = attr in metaAttrFunctions ? metaAttrFunctions[attr](attributes.content) : attributes.content;
+			frontMatter[attr] = content;
+		}
+		else {
+			console.log("Looking for a <meta> tag with", `name=${metaAttrsToRetrieve[attr]}`, "but failed to find one…");
+		}
+	});
+
 	originals.resourceFolders.forEach(function(rf) { // Replace all .resources directory paths with our media path
 		var encodedRF = encodeURIComponent(path.basename(rf));
 		body = body.replace(new RegExp(encodedRF, "g"), "{{ site.evernote_media_export_path }}");
 	});
 
-	var data = `---\n---\n${ pretty(body) }`;
+	var data = `---\n${ yaml.safeDump(frontMatter) }---\n${ pretty(body) }`;
 
 	return data;
 };
 
 console.log("\nExtracting HTML files…");
-originals.html_files.forEach(function(filepath) { // Copy over transformed HTML files
+// Filter out index.html so that we don't export that
+originals.html_files.filter(f => !f.match(/index\.html$/)).forEach(function(filepath) { // Copy over transformed HTML files
 	console.log("Extracting the <body> from", filepath);
 	var body = getCleanBodyFrom(filepath);
 	var filename = path.basename(filepath).replace(/ /g, '-');

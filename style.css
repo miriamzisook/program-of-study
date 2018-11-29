@@ -6,6 +6,24 @@
 }
 
 
+.postTitle {
+	font-size: 1.17em;
+	font-weight: bold;
+	border-color: black;
+}
+
+.evernote.post {
+		/*border: 1px solid gainsboro;*/
+		background-color: ghostwhite;
+		padding: 2em;
+		margin: 1em;
+	}
+
+.evernote img {
+	width: 30vw;
+	height: 30vw;
+}
+
 body {
 	font-family: 'Inconsolata', monospace;
 	font-size: 1em;
@@ -18,7 +36,7 @@ body {
 .main-container {
 	margin: 0 auto;
 	margin-top: 10vh;
-	width: 60vw;
+	width: 75vw;
 }
 p {
 	line-height: 1.6em; 
@@ -31,9 +49,9 @@ p {
 
 #projects.main-container {
 	display: grid;
-	grid-template-columns: repeat(3, 20vw);
-	grid-template-rows: repeat(3, 12vw);
-	grid-gap: 40px;
+	grid-template-columns: repeat(3, 25vw);
+	grid-template-rows: repeat(3, 15vw);
+	grid-gap: 20px;
 }
 
 .project {

@@ -1,6 +1,7 @@
-collections:
+-evernote_media_export_path: "media/evernote-export"
 
-  projects: 
-    output: true
+collections:
+  - evernotes
+  - projects
 
   

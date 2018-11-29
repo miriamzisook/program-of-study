@@ -22,7 +22,7 @@
 </head>
 <body>
 	{% for post in site.evernotes %}
-	<h3> {{post.title}}</h3>
+	<div>{{post.title}} | {{post.dateCreated | date: "%m/%d/%Y" }}</div>
 	<div class='evernote post'>
 	{{ post.content }}
 	</div>

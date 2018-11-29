@@ -1,7 +1,7 @@
 ---
 layout: project
 title: A Golden Hem 
-subtitle: repairing an emotional mistake
+subtitle: Repairing an Relational Mistake
 image: "images/scarfHem.jpg"
 color: "green"
 ---

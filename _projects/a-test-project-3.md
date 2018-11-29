@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Mapping Imperfection
-subtitle: a catalog of perspectives on imperfection in craft from around the world and throughout history
+subtitle: A Catalog of Perspectives on Imperfection in Craft from Around the World and Throughout History
 image: "images/map.png"
 color: "purple"
 ---

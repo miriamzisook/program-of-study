@@ -1,7 +1,7 @@
 ---
 layout: project
-title: I will be the one to cut off communication
-subtitle: Exploring 5 years of digital correspondence
+title: Cut Off Communication
+subtitle: Exploring 5 years of Digital Correspondence
 image: "/images/emails2.png"
 color: "red"
 ---

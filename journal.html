@@ -2,11 +2,13 @@
 layout: homepageTemplate
 ---
 
-<div class='main-container'>
-	{% for post in site.evernotes %}
-	<div class='postTitle'>{{post.dateCreated | date: "%m.%d.%Y" }}: {{post.title}} </div>
+PATH: {{ site.evernote_media_export_path }}
 
-	<div class='evernote post'>
+<div class='main-container'>
+	{% for post in site.evernotes reversed %}
+	<div class='postTitle'>{{post.dateUpdated | date: "%m.%d.%Y" }}: {{post.title}} </div>
+
+	<div class='evernote post' style='height:40vh'>
 	{{ post.content }}
 	</div>
 	{% endfor %}

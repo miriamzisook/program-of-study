@@ -1,7 +1,5 @@
--evernote_media_export_path: "media/evernote-export"
+evernote_media_export_path: "media/evernote-export"
 
 collections:
   - evernotes
   - projects
-
-  

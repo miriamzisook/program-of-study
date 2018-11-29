@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Fake Project 3
-subtitle: This is yet another test project!
-image: "images/potatoes.jpg"
+title: Mapping Imperfection
+subtitle: a catalog of perspectives on imperfection in craft from around the world and throughout history
+image: "images/map.png"
 color: "purple"
 ---
 

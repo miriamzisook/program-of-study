@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Fake Project 1
-subtitle: This is a test project!
-image: "images/potatoes.jpg"
+title: A Golden Hem 
+subtitle: repairing an emotional mistake
+image: "images/scarfHem.jpg"
 color: "green"
 ---
 

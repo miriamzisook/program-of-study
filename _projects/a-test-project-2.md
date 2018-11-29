@@ -1,8 +1,8 @@
 ---
 layout: project
-title: Fake Project 2
-subtitle: This is another test project!
-image: "/images/potatoes.jpg"
+title: I will be the one to cut off communication
+subtitle: Exploring 5 years of digital correspondence
+image: "/images/emails2.png"
 color: "red"
 ---
 

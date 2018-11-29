@@ -1,9 +1,9 @@
 ---
 layout: project
-title: Fake Project 1
-subtitle: This is a test project!
-image: "images/potatoes.jpg"
+title: Mistakes Were Made
+subtitle: a blog exploring imperfections and mistakes in craft
+image: "images/blogPage.png"
 color: "green"
 ---
 
-This is yet another test project, with much more to sya about it and images and stuff! 
+This is where I will write about and link to the blog! 

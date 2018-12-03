@@ -33,7 +33,6 @@
 		background-color: ghostwhite;
 		padding: 2em;
 		margin: 1em;
-		color: blue !important;
 		overflow: scroll;
 	}
 
@@ -54,7 +53,7 @@ body {
 
 .main-container {
 	margin: 0 auto;
-	margin-top: 10vh;
+	margin-top: 5vh;
 	width: 75vw;
 }
 p {
@@ -75,11 +74,19 @@ p {
 
 .project {
 	position: relative;
+	background-color: gray;
+	color: transparent;
 }
 
 .project:hover .background-image {
 	opacity: 0.0;
 	transition: 0.125s;
+}
+
+.project:hover { 
+    background-color: darkGreen;
+    color: black;
+
 }
 
 .project .background-image {
@@ -95,19 +102,18 @@ p {
 	height: 100%;
 }
 
-.project {
-	background-color: gray;
-	color: transparent;
-}
-
-.project:hover { 
-    background-color: darkGreen;
-    color: black;
-
-}
-
 a {
 	color: gray;
+}
+
+.projectLink {
+	opacity: 0.0;
+	color: black;
+
+}
+
+.projectLink:hover {
+	opacity: 1.0;
 }
 
 .postImg {

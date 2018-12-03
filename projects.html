@@ -6,13 +6,31 @@ layout: homepageTemplate
 <div class='main-container' id='projects'>
 	
 	{% for project in site.projects %}
+	<script> 
+
+		
+		// var arr = Array.prototype.slice.call(document.getElementsByClassName("project"))
+		// arr.forEach(function(i){ 
+		// 	i.addEventListener("click", function(){
+		// 	window.location.href = "{{project.url}}";
+		// 	});
+		// })
+		
+
+
+</script>
+
 	<div class='project'>
-		<div class='background-image' style='background-image: url( {{ project.image }} ); background-image-size: cover;'></div>
-		<div class='content'>
-			<h3> {{ project.title }}</h3>
-			<p>{{ project.subtitle }}</p>
+		<div class='background-image' style='background-image: url( {{ project.image }} ); background-image-size: cover;'>
 		</div>
+		<a class='projectLink' href="{{project.url}}">
+		<div class='content'>
+			<h3>{{ project.title }}</h3> 
+			<p>{{ project.subtitle }}</p>
+		</div></a>
 	</div>
+
+
 
 {% endfor %}
 

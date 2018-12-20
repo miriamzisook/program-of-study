@@ -20,7 +20,11 @@ I wondered if I could make something for myself that I would actually enjoy out 
 #### Design Choices: 
 - Choosing the style: When I started thinking about the project, I considered making a scarf that would prominently feature the pomegranate fabric. I immediately felt that I did not want to wear it and have to see it, and considered ways to incorporate the fabric but not show it very much. I settled on the idea of a cowl scarf, a style I knew I would enjoy, where the pomegranate fabric makes only small appearances as an accent. 
 - Choosing fabric: [Here](https://photos.app.goo.gl/E6o6B72MEdLQLyW59) you can follow along with my visit to Gather Here to buy materials. 
-- The lining and the pocket: I decided to line the scarf with the pomegranate fabric. I used a zipper pocket as an accent, and so I would retain access to the inside so I could make changes. I may choose to expose more and more of the pomegranate fabric, as my emotional experience and the role my mom plays in my life changes over time. I may not. 
+- The lining and the pocket: I decided to line the scarf with the pomegranate fabric, and cut holes to expose small bits of the pomegranate fabric over time. I used a zipper pocket as an accent, and so I would retain access to the inside so I could make changes. I may choose to expose more and more of the pomegranate fabric, as my emotional experience and the role my mom plays in my life changes over time. I may not. 
+- The dinosaur patch: As I began to chip away at the fabric to reveal the pomegranates, I realized that I simply didn't want to. This project was about givin my mom less space to affect me, not more. Instead of embellishing the scarf with the pomegranates representing  my mother, I added a dinosaur to represent myself. 
+
+<img src='/images/scarfDino.jpg' alt="a small patch with a t-res" width="20%">
+
 - The hem: I chose to use golden thread to crearte a hem by hand in the style my mom said it should be. This felt like the most direct way to invoke the idea of the golden scar. I find it dificult to articulate why, but it feels irreverent in a way that I enjoy. 
 
 #### The Thank you Note:

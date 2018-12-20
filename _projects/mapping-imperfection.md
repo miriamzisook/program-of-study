@@ -6,13 +6,13 @@ image: "images/map.png"
 color: "purple"
 ---
 
-As long as there has been craft, there have been challenging, frustrating, and inevitable mistakes. Craftspeople from around the world and throughout history have responded to this by developing cultural and spiritual traditions for making sense of the imperfection and error inherent to their work. This [interactive map](https://www.google.com/maps/d/u/0/edit?mid=100-0WsK-ZQAdmNg1yAVvRuW4qi9RT4Lc&ll=9.009664116231953%2C0&z=2) is a collection of such traditions. 
+As long as there has been craft, there have been challenging, frustrating, and inevitable mistakes. Craftspeople from around the world and throughout history have responded to this by developing cultural and spiritual traditions for making sense of the imperfection and error inherent to their work. 
 
-As I continue to explore what makes imperfection brilliant, this map will be updated with discoveries of traditions from around the world. You can email me with ideas to add or correct at [miriam@powderhouse.org](mailto:miriam@powderhouse.org). 
+This [interactive map](https://www.google.com/maps/d/u/0/edit?mid=100-0WsK-ZQAdmNg1yAVvRuW4qi9RT4Lc&ll=9.009664116231953%2C0&z=2) is a repository for me to collect examples of these traditions from around the world and how they influence my thinking. As I continue to explore what makes imperfection brilliant, this map will be updated with discoveries of such traditions from around the world. You can email me with ideas to add or correct at [miriam@powderhouse.org](mailto:miriam@powderhouse.org). 
 
 <img src="/images/map.png" width="100%"/>
 
-The traditions are categorized into 5 themes:
+The traditions are categorized into 5 themes, and I will be continuing to refine and adjust these themes as I learn more about these traditions, and discover new ones:
 
 - **Life is fragile:** Some traditions, such as the Japanese tradition of Wabi Sabi, honor the fragility of life by emulating it in craft. Rather than pursue the sterility of perfection, craftspeople in these traditions celebrate impermanence and fragility by embellishing it and making it beautiful in their work.
 - **Only god Is perfect:** In some traditions, such as Persian Carpet Weaving, it is considered an affront to God for humans to pursue perfection. To respect the rightful place of humans in relationship to God, craftspeople in these traditions leave an intentional flaw in their work.
@@ -20,7 +20,7 @@ The traditions are categorized into 5 themes:
 - **Perfection is hubris:** In the Greek myth of Arachne the Weaver, Arachne believes she can weave better than the Goddess Athena. When she exhibits the hubris to strive for perfection in her craft, she is punished by the Gods by being turned to spider. Although it is known to be apocryphal, American quilters spread this idea in the form of a myth that Amish quilters purposefully embed a mistake in every quilt as a sign of humility before God.
 - **Perfection is a trap:** In indigenous weaving traditions from the Southwestern United States, weavers intentionally leave a park called a spirit line in baskets and rugs. The spirit line interrupts the perfect symmetry of the pattern to create a pathway for the spirit of the weaver to exit the piece. The spirit line speaks to the idea that if the piece were completed perfectly, the spirit of the weaver would be trapped, and she would be unable to move on to her next piece.
 
-I find that the fact that at least some of these traditions are apocryphal is the most moving thing about it. To me, it speaks to the idea that to err is human, and to be frustrated about it is human too. So, throughout history we see humans trying to make meaning out of imperfection through storytelling. See that backwards quilt block, it has a story to tell about humility before god. See that patched hole in that jacket, it's there to remind of the preciousness of life. Even if the original crafter may have just put the block on backwards, modern makers crave meaning, and retroactively tell the story that it was there by design. If to err is human, then surely these traditions can all be construed as diving acts of forgiveness. 
+So far, I find that the fact that at least some of these traditions are apocryphal is the most moving thing about it. To me, it speaks to the idea that to err is human, and to be frustrated about it is human too. So, throughout history we see humans trying to make meaning out of imperfection through storytelling. See that backwards quilt block, it has a story to tell about humility before god. See that patched hole in that jacket, it's there to remind of the preciousness of life. Even if the original crafter may have just put the block on backwards, modern makers crave meaning, and retroactively tell the story that it was there by design. If to err is human, so it seems, is to try to ascribe meaning to our errors. 
 
 About the process:
 

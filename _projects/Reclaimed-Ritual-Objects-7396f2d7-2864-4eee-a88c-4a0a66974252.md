@@ -47,11 +47,11 @@ While I did write a little bit of a blessing, I ended up choosing to "hide" it w
 **Candlesticks**
 
 ![]()
-<img src="/images/candlesticksPhotoedCutOutDone-725a2374-b768-436a-8633-7e1ae4b550c7.jpg" width="90%">
-
-These are the original candlesticks. 
+<img src="/images/candlesticksPhotoedCutOutDone-725a2374-b768-436a-8633-7e1ae4b550c7.jpg" width="90%"> 
 
 <img src="/images/IMG_1769-73c6fe66-1fc2-40c3-8832-c6d49445a456.JPG" width="45%">
+
+##### These are the original candlesticks.
 
 For the candlesticks I drew inspiration from a story I was raised on. I have been told that the candlesticks were one of 2 possessions which survived the war. The other was a single diamond, the last of several which had been sewn into the hems of my family's clothes to use as bribes along their way. My uncle gave the diamond to his future wife as an engagement ring, and the stone fell out of its setting and was lost. Allegedly, my father saved the day by saying that even if it was replaced with a new stone, it would still carry what makes it special in story and memory. 
 
@@ -75,11 +75,12 @@ Each of the images etched on the candlesticks reflects a powerful moment in my f
 
 For the challah cover I chose to start with the recipe, and to incorporate the tree of life motif from the candlesticks and blessing. I set the goal to write a poem, and Febo helped me turn the words of the recipe into a poem. The poem is meant to express the spirit of shabbat—of stopping what you are doing to rest—using the language of the recipe. Ultimately, the poem shows up in the challah cover embedded in the recipe, not as a standalone.
 
-This is the original recipe alongside the poem:
 
 
 <img src="/images/ChallahRecipe-2ff65dd4-2f25-4713-b45c-09a40994670c.jpg" width="45%">
 <img src="/images/ScreenShot2019-02-04at3-30e466c6-4eb2-4e90-81ea-56e1c073de24.38.51PM.png" width="45%">
+
+##### This is the original recipe alongside the poem
 
 **A takeaway about making:** This piece turned out to be *slow*. Embroidery is slow and annoying, and may not be a medium I choose to work in regularly. 
 

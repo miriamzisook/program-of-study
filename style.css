@@ -21,10 +21,15 @@
 	color: darkGreen;
 	line-height: 1.6em
 }
+.attribution {
+	font-size: .8em;
+	font-style:italic;
+	color: black;
+	line-height: 1.6em	
+}
 
 .postTitle {
 	font-size: 1.17em;
-	font-weight: bold;
 	border-color: black;
 }
 
@@ -61,7 +66,7 @@ p {
 }
 
 #about {
-	padding: 4vw;
+	/*padding: 4vw;*/
 	margin: 0 auto;
 }
 

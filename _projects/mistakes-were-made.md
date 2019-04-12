@@ -22,4 +22,4 @@ The internet offers us 2 templates for the craft blog:
 
 In this blog, I am seeking out a middle path. Just because the things I make will never be perfect doesn't mean I'll resign myself to making crappy projects. Nor does it mean I want to be forever ruled by feelings of failure and inadequacy when my finished product doesn't measure up to the Grainline Blog. 
 
-[These pages](https://jolly-euler-5e7006.netlify.com/) will be a tribute to the experience of making things from scratch, and what it has to teach me about my relationshiop to perfectionism, what it takes to make projects that are good enough, and what making things that are good enogh can teach me about feeling good enough. 
+[These pages](https://jolly-euler-5e7006.netlify.com/) will be a tribute to the experience of making things from scratch, and what it has to teach me about my relationshiop to perfectionism, what it takes to make projects that are good enough, and what making things that are good enough can teach me about feeling good enough. 

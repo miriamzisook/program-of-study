@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>daisy chain magazine</title>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+</head>
+
+
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato');
+	
+	body {
+		padding: 1em;
+		background-color: ghostWhite;
+		line-height: 1.6em;
+	}
+
+	a:hover {
+		text-decoration: underline;
+
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.dc-header {
+		border-top: 1px dotted dimGray;
+		border-bottom: 1px dotted dimGray;
+		padding: .5em;
+		margin-bottom: 2em;
+		width: 100%;
+	}
+
+	.dc-logo {
+		font-family: Abril Fatface, cursive;
+		font-size: 1.2em;
+		margin-right: 1.8em;
+		margin-left: 1.8em;
+		color: goldenRod;
+	}
+
+	.menu-item {
+		font-family: Lato, sans-serif;
+		font-size: 1em;
+		margin: 1.2em;
+		color:dimGray;
+
+	}
+
+	.menu-item:hover {
+		color: black;
+		font-weight: bold;
+	}
+
+	.dc-sidebar {
+		width: 25%;
+		height: 100%;
+		display: inline-block;
+		padding: 1em;
+		margin-right: 1em;
+		vertical-align: top;
+
+	}
+
+	.sidebar-block {
+		margin-bottom: 2em;
+		border-bottom: 1px dotted dimGray;
+	}
+
+	.sidebar-title {
+		font-family: Abril Fatface;
+	}
+
+	.sidebar-title:hover {
+		font-family: Abril Fatface;
+		text-decoration: underline;
+	}
+
+	.sidebar-category {
+		font-family: Lato;
+		color: goldenrod;
+	}
+	.sidebar-author {
+		font-family: Lato;
+		color: dimGrey;
+	}
+
+	.sidebar-img {
+		height:70%;
+		width:100%;
+
+	}
+
+	.dc-article {
+		width: 48vw;
+		display: inline-block;
+		padding: 1em;
+		border-left: 1px dotted dimGray;
+		padding-left: 3em;
+		color: dimGray;
+		background-color: gainsboro;
+	}
+
+	.article-title {
+		font-family: Abril Fatface;
+		font-size: 1.8em;
+		line-height: 2em;
+		color: black;
+	}
+
+	.article-author {
+		color: dimGray;
+		font-family: Lato;
+		margin-bottom: 2em;
+		font-size: 1em;
+	}
+
+	.article-body {
+		font-family: Lato;
+		font-size: 1em;
+	}
+
+	
+
+	.rule-title {
+		font-weight: bold;
+		color: black;
+		margin-top: 2em;
+	}
+
+	.rule-source {
+		text-decoration: underline;
+		font-size: .6em;
+		color: dimGray;
+		}
+
+	.rule-container {
+
+	}
+
+	.rule-img {
+		width: 40vw;
+		height: 40vw;
+	}
+
+	.hidden-text {
+		width: 40vw;
+		height: 40vw;
+		position:absolute;
+		background-color: goldenRod;
+		opacity: 0;
+	}
+
+	.hidden-text:hover {
+		opacity: .9;
+	}
+
+	p {
+		padding: 1em;
+	}
+
+	.fake-banner-ad {
+		width:70vw;
+		height:10vw;
+		background-color: gray;
+		margin:auto;
+		margin-bottom: 1em;
+		padding: 2em;
+	}
+
+	.fake-sidebar-ad {
+		width:14vw;
+		height:20vw;
+		background-color: gray;
+		margin:auto;
+		margin-bottom: 1em;
+		padding: 2em;
+	}
+
+	.fake-right-ad {
+		width:10vw;
+		height:20vw;
+		background-color: gray;
+		margin:auto;
+		margin-bottom: 1em;
+		padding: 2em;
+		float:right;
+	}
+
+
+</style>
+
+
+<body>
+
+<div class="dc-header">
+	<span class='menu-item'><i class="fas fa-bars"></i></span>
+	<span class='dc-logo'>daisy chain</span>
+	<span class='menu-item'>beauty</span>
+	<span class='menu-item'>fashion</span>
+	<span class='menu-item'>lifestyle</span>
+	<span class='menu-item'>entertainment</span>
+	<span class='menu-item'>news</span>
+	<span class='menu-item'>dear kitty</span>
+	<span class='menu-item'><i style="float:right;padding-right:1em" class="fas fa-search"></i></span>
+
+
+</div>
+
+<div class='fake-banner-ad'>fake banner ad</div>
+
+<div class='dc-main'>
+
+	<div class='dc-sidebar'>
+		<div class='sidebar-block'>
+			<img src="https://pixel.nymag.com/imgs/daily/intelligencer/2019/01/29/29-buzzfeed-quizzes.w700.h467.jpg" class="sidebar-img" alt='3 silly quiz headlines with the word quiz in a yellow dot'>
+			<div class=sidebar-title><a href="http://daisychainmagazine.com/quiz/">Which Dietland character are you?</a></div>
+			<div class="sidebar-category">quiz</div>
+			<div class="sidebar-author">By Eladio Reyes</div>
+		</div>
+
+		<div class='sidebar-block'>
+			<img src="/images/shesallfat20final.jpg" class='sidebar-img' alt="2 fat women stand next to each other holding hands. One is white the other is black. One is wearing a shirt that says 'riots not diets' the other's says 'feminist'">
+			<div class=sidebar-title><a href="https://shesallfatpod.com/">She's All Fat Pod</a></div>
+			<div class="sidebar-category">entertainment</div>
+			<div class="sidebar-author">By April K. Quioh & Sophia Carter-Kahn</div>
+		</div>
+
+		<div class='fake-sidebar-ad'>fake sidebar ad</div>
+
+		<div class='sidebar-block'>
+			<img src="https://i2.wp.com/curvysewingcollective.com/wp-content/uploads/2017/12/SPDB_everyone-1.png?w=768" class='sidebar-img' alt="4 women wearing versions of the same dress in different styles and colors. With a text overlay that says 'same pattern different bodies'">
+			<div class=sidebar-title><a href="http://curvysewingcollective.com/curvy-opinion-busting-myths-about-curvy-dressing/">Myth Bustin About Curvy Dressing</a></div>
+			<div class="sidebar-category">fashion</div>
+			<div class="sidebar-author">By Meg @ Curvy Sewing Collective</div>
+		</div>
+
+		<div class='sidebar-block'>
+			<img src="https://everydayfeminism.com/wp-content/uploads/2015/12/maxresdefault-22.jpg" class='sidebar-img' alt="a fat woman with long curly hair wearing a green and black dress on a solid background. Two cartoom women are in th ebackground behind her. She is gesturing as if she were explaining something">
+			<div class=sidebar-title><a href="https://www.bustle.com/articles/26582-7-fat-girls-cant-wear-that-rules-totally-and-completely-disproven">7 "Fat Girls Can't Wear That" Rules Totally And Completely Disproven</a></div>
+			<div class="sidebar-category">fashion</div>
+			<div class="sidebar-author">By Marie Southard Ospina</div>
+		</div>
+
+	</div>
+
+
+
+	<div class='dc-article'>
+		<div class="sidebar-category">fashion</div>
+		<div class=article-title>9 simple rules for dressing when fat</div>
+		<div class="article-author">by Miriam Zisook</div>
+		<div class="article-body">
+			
+			<div>intro intro intro </div>
+
+			<div>
+				<div class='rule-title'>1. Streamline With (mono) Color, especially black</div>
+				<div class='rule-source'><a href="https://www.glamour.com/gallery/how-to-dress-10-pounds-thinner">Glamour: How to Dress 10 Pounds Thinner</a></div>
+				<div class='rule-body'>blah blah blah</div>
+			
+				<div class='ruleContainer'>
+					<div class='hidden-text'>
+						<p>fuck it top</p>
+					</div>
+					<img src="/images/mendedHeart.jpg" class='rule-img'>
+				</div>
+			</div>
+
+			<div>
+				<div class='rule-title'>2. Go for a midi-length skirt</div>
+				<div class='rule-source'><a href="https://www.whowhatwear.com/outfits-that-make-you-look-thinner/slide23">Who What Wear: 30 Summer Outfits That Make Everyone Look 10 Pounds Thinner</a></div>
+				<div class='rule-body'>blah blah blah</div>
+
+
+			</div>
+
+			<div>
+				<div class='rule-title'>3. Skin Tight Dresses—Might Not Be A Great Idea</div>
+				<div class='rule-source'><a href="https://www.stylecraze.com/articles/dresses-to-hide-tummy/#gref">Style Craze: How To Dress To Hide Belly Fat</a></div>
+				<div class='rule-body'>blah blah blah</div>
+				<div class='ruleContainer'>
+					<div class='hidden-text'> 
+						<p>wiggle dress + "you can't wer that story" </p>
+					</div>
+					<img src="/images/mendedHeart.jpg" class='rule-img'>
+				</div>
+			</div>
+
+			<div>
+				<div class='rule-title'>4. Avoid Horizontal Stripes</div>
+				<div class='rule-source'><a href="https://www.dailymail.co.uk/femail/article-2164030/Yes-stripes-DO-make-look-fat-Unless-theyre-narrow-black-horizontal-Confused-Heres-make-work-you.html">Daily Mail, Yes: Stripes Do Make you Look Fat</a></div>
+				<div class='rule-body'>blah blah blah</div>
+				
+				<div class='ruleContainer'>
+					<div class='hidden-text'>
+						<p>yellow and gray striped concord</p>
+					</div>
+					<img src="/images/mendedHeart.jpg" class='rule-img'>
+				</div>
+
+			</div>
+
+			<div>
+				<div class='rule-title'>5. Cover up leggings with a tunic</div>
+				<div class='rule-source'><a href="https://www.nbcnews.com/health/body-odd/fact-check-do-leggings-really-make-you-fat-flna1C6437442">NBC: Fact check, Do leggings really make you fat?</a></div>
+				<div class='rule-body'>blah blah blah</div>
+				<div class='ruleContainer'>
+					<div class='hidden-text'>
+						<p>avocado leggings and/or cookie leggings</p>
+					</div>
+					<img src="/images/mendedHeart.jpg" class='rule-img'>
+				</div>
+
+			</div>
+
+			<div>
+				<div class='rule-title'>6. Toss a light jacket over your shoulders</div>
+				<div class='rule-source'><a href="https://www.whowhatwear.com/outfits-that-make-you-look-thinner/slide23">Who What Wear: 30 Summer Outfits That Make Everyone Look 10 Pounds Thinner</a></div>
+				<div class='rule-body'>blah blah blah</div>
+				<div class='ruleContainer'>
+					<div class='hidden-text'>
+						<p>dino dress</p>
+					</div>
+					<img src="/images/mendedHeart.jpg" class='rule-img'>
+				</div>
+
+			</div>
+
+			<div>
+				<div class='rule-title'>7. Pick Simple, unadorned denim</div>
+				<div class='rule-source'><a href="https://www.instyle.com/fashion/clothing/12-easy-ways-look-thinner-tonight">In Style, 12 Easy Ways to Look Thinner By Tonight</a></div>
+				<div class='rule-body'>blah blah blah</div>
+			</div>
+
+			<div>
+				<div class='rule-title'>8. Layer It Up—And Make-Believe</div>
+				<div class='rule-source'><a href="https://www.stylecraze.com/articles/dresses-to-hide-tummy/#gref">Style Craze: How To Dress To Hide Belly Fat</a></div>
+				<div class='rule-body'>blah blah blah</div>
+				<div class='ruleContainer'>
+					<div class='hidden-text'>
+						<p>floral jumpsuit</p>
+					</div>
+					<img src="/images/mendedHeart.jpg" class='rule-img'>
+				</div>
+			</div>
+
+			<div>
+				<div class='rule-title'>9. Embrace Shapewear</div>
+				<div class='rule-source'><a href="https://abcnews.go.com/GMA/shapewear-women-fake-til-make/story?id=12577634">ABC, Fake It 'Til You Make It: Best Shapewear for Women</a></div>
+				<div class='rule-body'>blah blah blah</div>
+				<div class='ruleContainer'>
+					<div class='hidden-text'>
+						<p>bikini</p>
+					</div>
+					<img src="/images/mendedHeart.jpg" class='rule-img'>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class='fake-right-ad'>fake ad</div>
+
+</div>
+
+</body>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>daisy chain magazine</title>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato');
+	
+	body {
+		padding: 1em;
+		background-color: ghostWhite;
+		line-height: 1.6em;
+	}
+
+	a:hover {
+		text-decoration: underline;
+
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.dc-header {
+		border-top: 1px dotted dimGray;
+		border-bottom: 1px dotted dimGray;
+		padding: .8vw;
+		margin-bottom: 2em;
+		width: 100%;
+
+	}
+
+	.dc-logo {
+		font-family: Abril Fatface, cursive;
+		font-size: 1.2em;
+		margin-right: 1vw;
+		margin-left: 1vw;
+		color: goldenRod;
+	}
+
+	.menu-item {
+		font-family: Lato, sans-serif;
+		font-size: 1em;
+		margin: 1vw;
+		color:dimGray;
+
+	}
+
+	.menu-item:hover {
+		color: black;
+		font-weight: bold;
+	}
+
+	.dc-sidebar {
+		width: 25%;
+		height: 100%;
+		display: inline-block;
+		padding: 1vw;
+		margin-right: 1.25vw;
+		vertical-align: top;
+
+	}
+
+	.sidebar-block {
+		display:block;
+		border: 2px red;
+		margin: 1vw;
+	}
+
+	.good {
+		display: none;
+	}
+
+	.bad {
+		display: block;
+	}
+
+
+	.sidebar-entry {
+		width: 100%;
+		margin-bottom: 2em;
+		border-bottom: 1px dotted dimGray;
+	}
+
+	.sidebar-entry.good {
+	}
+
+	.sidebar-entry.bad {
+	}
+
+	.sidebar-block:hover .good {
+		display: block;
+	}
+
+	.sidebar-block:hover .bad {
+		display: none;
+	}
+
+	.sidebar-title {
+		font-family: Abril Fatface;
+	}
+
+	.sidebar-title:hover {
+		font-family: Abril Fatface;
+		text-decoration: underline;
+	}
+
+	.sidebar-category {
+		font-family: Lato;
+		color: goldenrod;
+	}
+	.sidebar-author {
+		font-family: Lato;
+		color: dimGrey;
+	}
+
+	.sidebar-img {
+		width: 100%;
+		height: 15vw;
+		overflow:hidden;
+		object-fit: cover;
+		object-position: 50% 10%;
+
+	}
+
+	.dc-article {
+		width: 48vw;
+		display: inline-block;
+		padding: 1vw;
+		padding-left: 2vw;
+		border-left: 1px dotted dimGray;
+		color: dimGray;
+	}
+
+	.article-title {
+		font-family: Abril Fatface;
+		font-size: 1.8em;
+		line-height: 2em;
+		color: black;
+	}
+
+	.article-author {
+		color: dimGray;
+		font-family: Lato;
+		margin-bottom: 2em;
+		font-size: 1em;
+	}
+
+	.article-body {
+		font-family: Lato;
+		font-size: 1em;
+	}
+
+	.rule-title {
+		font-weight: bold;
+		color: black;
+		margin-top: 2em;
+	}
+
+	.rule-source {
+		text-decoration: underline;
+		font-size: .6em;
+		color: dimGray;
+		}
+
+	.rule-container {
+
+	}
+
+	.rule-img {
+		width: 30vw;
+		height: 30vw;
+	}
+
+
+	p {
+		padding: 1vw;
+	}
+
+	.ad-img-banner {
+		width:100%;
+		object-fit: cover;
+	}
+
+	.ad-img {
+		width: 70%;
+		height:70%;
+		object-fit: contain;
+	}
+
+	.fake-banner-ad {
+		width:60vw;
+		height:8vw;
+		border: 1px dimGray;
+		margin:auto;
+		margin-bottom: 3em;
+		padding: .4vw;
+	}
+
+	.fake-sidebar-ad {
+		width:18vw;
+		height:24vw;
+		border: 1px dimGray;
+		margin:auto;
+		margin-bottom: 1em;
+		padding: .4vw;
+	}
+
+	.fake-sidebar-ad:hover .good{
+		display: block;
+	}
+
+	.fake-sidebar-ad:hover .bad{
+		display: none;
+	}
+
+	.fake-banner-ad:hover .good{
+		display: block;
+	}
+
+	.fake-banner-ad:hover .bad{
+		display: none;
+	}
+
+	.fake-right-ad {
+		width: 40px;
+		height:60px;
+		border: 1px gray;
+		object-fit: cover;
+		float:right;
+	}
+
+	.fake-right-ad:hover .good{
+		display: block;
+	}
+
+	.fake-right-ad:hover .bad{
+		display: none;
+	}
+
+	.intro:hover .good{
+		display:block;
+	}
+
+	.intro:hover .bad{
+		display:none;
+	}
+
+
+</style>
+
+<script>
+
+$(document).ready(function(){
+ 	$("#ruin-it").hide(); 
+
+ 	$("#fix-it").click(function(){
+ 		console.log("fix it clicked")
+ 		$(".good").show();
+ 		$(".bad").hide();
+ 		$("#ruin-it").show();
+ 		$("#fix-it").hide();
+ 	})
+
+ 	$("#ruin-it").click(function(){
+ 		console.log("ruin it clicked")
+ 		$(".bad").show();
+ 		$(".good").hide();
+ 		$("#ruin-it").hide();
+ 		$("#fix-it").show();
+ 	})
+
+
+});
+
+
+
+</script>
+
+
+<body>
+
+<div class="dc-header">
+	<span class='menu-item'><i class="fas fa-bars"></i></span>
+	<span class='dc-logo'>daisy chain</span>
+	<span class='menu-item'>beauty</span>
+	<span class='menu-item'>fashion</span>
+	<span class='menu-item'>lifestyle</span>
+	<span class='menu-item'>entertainment</span>
+	<span class='menu-item'>news</span>
+	<span class='menu-item'>dear kitty</span>
+	<span id="fix-it" class='menu-item'>fix it</span>
+	<span id="ruin-it" class='menu-item'>ruin it</span>
+	<span class='menu-item'><i style="float:right;padding-right:1em" class="fas fa-search"></i></span>
+
+
+</div>
+
+<div class='fake-banner-ad'>
+	<div class='good'>
+		<img class='ad-img-banner' src="/images/daisyChainImages/fkdp3.png" alt="ad for Fat Kid Dance Party">
+	</div>
+	<div class='bad' >
+		<img class='ad-img-banner' src="/images/daisyChainImages/noomAdCopy.jpg" alt="ad for Noom. 'weight loss for millenials">
+	</div>
+</div>
+
+
+<div class='dc-main'>
+
+	<div class='dc-sidebar'>
+
+		<div class="sidebar-block" id='sidebar-1'>
+			<div class='sidebar-entry good'>
+				<img src="https://pixel.nymag.com/imgs/daily/intelligencer/2019/01/29/29-buzzfeed-quizzes.w700.h467.jpg" class="sidebar-img" alt='3 silly quiz headlines with the word quiz in a yellow dot'>
+				<div class=sidebar-title><a href="http://daisychainmagazine.com/quiz/">Which Dietland character are you?</a></div>
+				<div class="sidebar-category">quiz</div>
+				<div class="sidebar-author">By Eladio Reyes</div>
+				</div>
+			<div class='sidebar-entry bad'>
+				<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rachel-mcadams-as-regina-george-rachel-mcadams-2377254-1600-900-1533227188.jpg?resize=980:*" class='sidebar-img' alt="Regina George held aloft on the shoulders of several boys">
+				<div class=sidebar-title><a href="https://www.cosmopolitan.com/sex-love/quizzes/a56099/quiz-what-type-of-bitch-are-you/">What Type of B*tch Are You?</a></div>
+				<div class="sidebar-category">entertainment</div>
+				<div class="sidebar-author">By Hannah Smothers</div>
+			</div>
+		</div>
+
+		<div class="sidebar-block" id='sidebar-2'>
+			<div class='sidebar-entry good'>
+				<img src="/images/daisyChainImages/shesallfat20final.jpg" class='sidebar-img' alt="2 fat women stand next to each other holding hands. One is white the other is black. One is wearing a shirt that says 'riots not diets' the other's says 'feminist'">
+			<div class=sidebar-title><a href="https://shesallfatpod.com/">She's All Fat Pod</a></div>
+			<div class="sidebar-category">entertainment</div>
+			<div class="sidebar-author">By April K. Quioh & Sophia Carter-Kahn</div>
+		</div>
+			<div class='sidebar-entry bad'>
+				<img src="https://assets.vogue.com/photos/5b59fe5c1ae7f5247ec516eb/master/w_1560,c_limit/00-story-applying-concealer.jpg" class='sidebar-img' alt="2 young women with dewy skin sit on an oversized chair">
+				<div class=sidebar-title><a href="https://www.vogue.com/article/how-to-apply-concealer-pro-expert-guide-dark-circles-bags-blemishes">5 Ways to Make Your Concealer Look Invisible</a></div>
+				<div class="sidebar-category">beauty</div>
+				<div class="sidebar-author">By Lauren Valenti</div>
+			</div>
+		</div>
+
+		<div class='fake-sidebar-ad'>
+			<div class='good'>
+				<img class='ad-img' src="/images/daisyChainImages/yoga.png" alt="Jessamyn Stanley posing with the slogan 'every body yoga'">
+			</div>
+			<div class='bad'>
+				<img class='ad-img' src="/images/daisyChainImages/bellyFatDouble.jpg" alt="ad for weight loss with a cartoon belly">
+			</div>
+		</div>
+
+		<div class="sidebar-block" id='sidebar-3'>
+			<div class='sidebar-entry good'>
+				<img src="https://i2.wp.com/curvysewingcollective.com/wp-content/uploads/2017/12/SPDB_everyone-1.png?w=768" class='sidebar-img' alt="4 women wearing versions of the same dress in different styles and colors. With a text overlay that says 'same pattern different bodies'">
+				<div class=sidebar-title><a href="http://curvysewingcollective.com/curvy-opinion-busting-myths-about-curvy-dressing/">Myth Busting About Curvy Dressing</a></div>
+				<div class="sidebar-category">fashion</div>
+				<div class="sidebar-author">By Meg @ Curvy Sewing Collective</div>
+			</div>
+			<div class='sidebar-entry bad'>
+				<img src="https://peopledotcom.files.wordpress.com/2019/04/kate-hudson-6.jpg" class='sidebar-img' alt="Kate Hudson taking a mirror selfie">
+				<div class=sidebar-title><a href="https://people.com/health/kate-hudson-couple-pounds-from-goal-weight/">Kate Hudson Celebrates Being ‘a Couple Pounds from Goal Weight!’: ‘I Have Been Disciplined’</a></div>
+				<div class="sidebar-category">health & wellness</div>
+				<div class="sidebar-author">By Julie Mazziotta</div>
+			</div>
+		</div>
+
+		<div class="sidebar-block" id='sidebar-4'>
+			<div class='sidebar-entry good'>
+				<img src="https://everydayfeminism.com/wp-content/uploads/2015/12/maxresdefault-22.jpg" class='sidebar-img' alt="a fat woman with long curly hair wearing a green and black dress on a solid background. Two cartoom women are in th ebackground behind her. She is gesturing as if she were explaining something">
+				<div class=sidebar-title><a href="https://www.bustle.com/articles/26582-7-fat-girls-cant-wear-that-rules-totally-and-completely-disproven">7 "Fat Girls Can't Wear That" Rules Totally And Completely Disproven</a></div>
+				<div class="sidebar-category">fashion</div>
+				<div class="sidebar-author">By Marie Southard Ospina</div>
+			</div>
+			<div class='sidebar-entry bad'>
+				<img src="https://peopledotcom.files.wordpress.com/2019/01/melissa-mccarthy-3.jpg" class='sidebar-img' alt="Melissa McCarthy on a red carpet">
+				<div class=sidebar-title><a href="https://www.liveabout.com/styles-that-make-women-look-fat-2658614">7 Styles that Make Women Look Fat</a></div>
+				<div class="sidebar-category">fashion</div>
+				<div class="sidebar-author">By Paula Darnell</div>
+			</div>
+		</div>
+
+			
+	</div>
+
+
+		
+
+	<div class='dc-article'>
+		<div class="sidebar-category">fashion</div>
+		<div class=article-title>9 simple rules for dressing when fat</div>
+		<div class="article-author">by Miriam Zisook</div>
+		<div class="article-body">
+			
+			<div class='intro'>
+				<div class='bad'>Nobody wants to look fat, but there are so many myths out there about how to dress your best. Here we wade through the myths to share 9 tried and true tips for dressing to fit and flatter. Look 10 pounds thinner by tonight if you follow these wardrobe tricks.</div>
+				<div class='good'>good intro</div>
+			</div>
+	</div>
+
+
+
+	<div class='fake-right-ad'>
+			<div class='good'><img src="/images/daisyChainImages/manatee.jpg"  alt="manatee saying'Don't say such mean things about yourself. That's my favorite person you're talking about'"></div>
+			<div class='bad'><img src="/images/daisyChainImages/bellyFat2.jpeg"  alt="advertisement for weight loss with a cartoon"></div>
+	</div>
+
+	</div>
+
+
+
+</body>

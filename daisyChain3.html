@@ -91,23 +91,7 @@
 		border-bottom: 1px dotted dimGray;
 	}
 
-
-	.sidebar-block:hover .good {
-		display: block;
-	}
-
-	.sidebar-block:hover .bad {
-		display: none;
-	}
-
-	.sidebar-title {
-		font-family: Abril Fatface;
-	}
-
-	.sidebar-title:hover {
-		font-family: Abril Fatface;
-		text-decoration: underline;
-	}
+	/**/
 
 	.sidebar-category {
 		font-family: Lato;
@@ -171,13 +155,50 @@
 
 	}
 
-	.rule-img {
-		width: 30vw;
+	.img-box {
+		width: 25vw;
+		height: 35vw;
 		float:center;
 		margin:6px;
-		margin-left: 25%;
+		margin-left: 10vw;
+		margin-right: 0;
+		position: relative;
 	}
 
+	.rule-img {
+		position:absolute;
+		width:100%;
+		object-fit: cover;
+	}
+
+/*bottom placement */
+	/*.about-outfit {     
+		position:absolute;
+		top: 80%;
+		height: 16%;
+		width: 96%;
+		background-color: gainsboro;
+		color: black;
+		font-size: .75em;
+		padding: 2%;
+
+
+	}*/
+/*side placement */
+	.about-outfit {
+		position:absolute;
+		top: 0;
+		left: 25vw;
+		height: 94%;
+		width: 12vw;
+		background-color: gainsboro;
+		color: black;
+		font-size: .75em;
+		padding: 2%;
+		padding-bottom: 0%;
+
+
+	}
 
 	p {
 		padding: 1vw;
@@ -220,6 +241,24 @@
 		object-fit: cover;
 		float:right;
 		display:inline-block;
+	}
+
+	.sidebar-title {
+		font-family: Abril Fatface;
+	}
+
+	.sidebar-title:hover {
+		font-family: Abril Fatface;
+		text-decoration: underline;
+	}
+
+	/*
+	.sidebar-block:hover .good {
+		display: block;
+	}
+
+	.sidebar-block:hover .bad {
+		display: none;
 	}
 
 	.fake-right-ad:hover .good{
@@ -268,212 +307,231 @@
 
 	.rule:hover .good {
 		display: block;
-	}
-
-
-</style>
-
-<script>
-
-	$(document).ready(function(){
-		$("#ruin-it").hide(); 
-
-		$("#fix-it").click(function(){
-			console.log("fix it clicked")
-			$(".good").show();
-			$(".bad").hide();
-			$("#ruin-it").show();
-			$("#fix-it").hide();
-		})
-
-		$("#ruin-it").click(function(){
-			console.log("ruin it clicked")
-			$(".bad").show();
-			$(".good").hide();
-			$("#ruin-it").hide();
-			$("#fix-it").show();
-		})
-
-
-		
-
-		
-		
-
-	});
+		}
+		*/
 
 
 
-</script>
 
 
-<body>
+	</style>
 
-	<div class="dc-header">
-		<span class='menu-item'><i class="fas fa-bars"></i></span>
-		<span class='dc-logo'>daisy chain</span>
-		<span class='menu-item'>beauty</span>
-		<span class='menu-item'>fashion</span>
-		<span class='menu-item'>lifestyle</span>
-		<span class='menu-item'>entertainment</span>
-		<span class='menu-item'>news</span>
-		<span class='menu-item'>dear kitty</span>
-		<span id="fix-it" class='menu-item'>fix it</span>
-		<span id="ruin-it" class='menu-item'>ruin it</span>
-		<span class='menu-item'><i style="float:right;padding-right:1em" class="fas fa-search"></i></span>
+	<script>
+
+		$(document).ready(function(){
+			$("#ruin-it").hide(); 
+
+			$("#fix-it").click(function(){
+				console.log("fix it clicked")
+				$(".good").show();
+				$(".bad").hide();
+				$("#ruin-it").show();
+				$("#fix-it").hide();
+			})
+
+			$("#ruin-it").click(function(){
+				console.log("ruin it clicked")
+				$(".bad").show();
+				$(".good").hide();
+				$("#ruin-it").hide();
+				$("#fix-it").show();
+			})
 
 
-	</div>
 
-	<div class='fake-banner-ad'>
-		<div class='good'>
-			<img class='ad-img-banner' src="/images/daisyChainImages/fkdp3.png" alt="ad for Fat Kid Dance Party">
+
+
+
+
+		});
+
+
+
+	</script>
+
+
+	<body>
+
+		<div class="dc-header">
+			<span class='menu-item'><i class="fas fa-bars"></i></span>
+			<span class='dc-logo'>daisy chain</span>
+			<span class='menu-item'>beauty</span>
+			<span class='menu-item'>fashion</span>
+			<span class='menu-item'>lifestyle</span>
+			<span class='menu-item'>entertainment</span>
+			<span class='menu-item'>news</span>
+			<span class='menu-item'>dear kitty</span>
+			<span id="fix-it" class='menu-item'>fix it</span>
+			<span id="ruin-it" class='menu-item'>ruin it</span>
+			<span class='menu-item'><i style="float:right;padding-right:1em" class="fas fa-search"></i></span>
+
+
 		</div>
-		<div class='bad' >
-			<img class='ad-img-banner' src="/images/daisyChainImages/noomAdCopy.jpg" alt="ad for Noom. 'weight loss for millenials">
-		</div>
-	</div>
 
-
-	<div class='dc-main'>
-
-		<div class='dc-sidebar'>
-
-			<div class="sidebar-block" id='sidebar-1'>
-				<div class='sidebar-entry good'>
-					<img src="https://pixel.nymag.com/imgs/daily/intelligencer/2019/01/29/29-buzzfeed-quizzes.w700.h467.jpg" class="sidebar-img" alt='3 silly quiz headlines with the word quiz in a yellow dot'>
-					<div class=sidebar-title><a href="http://daisychainmagazine.com/quiz/">Which Dietland character are you?</a></div>
-					<div class="sidebar-category">quiz</div>
-					<div class="sidebar-author">By Eladio Reyes</div>
-				</div>
-				<div class='sidebar-entry bad'>
-					<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rachel-mcadams-as-regina-george-rachel-mcadams-2377254-1600-900-1533227188.jpg?resize=980:*" class='sidebar-img' alt="Regina George held aloft on the shoulders of several boys">
-					<div class=sidebar-title><a href="https://www.cosmopolitan.com/sex-love/quizzes/a56099/quiz-what-type-of-bitch-are-you/">What Type of B*tch Are You?</a></div>
-					<div class="sidebar-category">entertainment</div>
-					<div class="sidebar-author">By Hannah Smothers</div>
-				</div>
+		<div class='fake-banner-ad'>
+			<div class='good'>
+				<img class='ad-img-banner' src="/images/daisyChainImages/fkdp3.png" alt="ad for Fat Kid Dance Party">
 			</div>
-
-			<div class="sidebar-block" id='sidebar-2'>
-				<div class='sidebar-entry good'>
-					<img src="/images/daisyChainImages/shesallfat20final.jpg" class='sidebar-img' alt="2 fat women stand next to each other holding hands. One is white the other is black. One is wearing a shirt that says 'riots not diets' the other's says 'feminist'">
-					<div class=sidebar-title><a href="https://shesallfatpod.com/">She's All Fat Pod</a></div>
-					<div class="sidebar-category">entertainment</div>
-					<div class="sidebar-author">By April K. Quioh & Sophia Carter-Kahn</div>
-				</div>
-				<div class='sidebar-entry bad'>
-					<img src="https://assets.vogue.com/photos/5b59fe5c1ae7f5247ec516eb/master/w_1560,c_limit/00-story-applying-concealer.jpg" class='sidebar-img' alt="2 young women with dewy skin sit on an oversized chair">
-					<div class=sidebar-title><a href="https://www.vogue.com/article/how-to-apply-concealer-pro-expert-guide-dark-circles-bags-blemishes">5 Ways to Make Your Concealer Look Invisible</a></div>
-					<div class="sidebar-category">beauty</div>
-					<div class="sidebar-author">By Lauren Valenti</div>
-				</div>
+			<div class='bad' >
+				<img class='ad-img-banner' src="/images/daisyChainImages/noomAdCopy.jpg" alt="ad for Noom. 'weight loss for millenials">
 			</div>
-
-			<div class='fake-sidebar-ad'>
-				<div class='good'>
-					<img class='ad-img' src="/images/daisyChainImages/yoga.png" alt="Jessamyn Stanley posing with the slogan 'every body yoga'">
-				</div>
-				<div class='bad'>
-					<img class='ad-img' src="/images/daisyChainImages/bellyFatDouble.jpg" alt="ad for weight loss with a cartoon belly">
-				</div>
-			</div>
-
-			<div class="sidebar-block" id='sidebar-3'>
-				<div class='sidebar-entry good'>
-					<img src="https://i2.wp.com/curvysewingcollective.com/wp-content/uploads/2017/12/SPDB_everyone-1.png?w=768" class='sidebar-img' alt="4 women wearing versions of the same dress in different styles and colors. With a text overlay that says 'same pattern different bodies'">
-					<div class=sidebar-title><a href="http://curvysewingcollective.com/curvy-opinion-busting-myths-about-curvy-dressing/">Myth Busting About Curvy Dressing</a></div>
-					<div class="sidebar-category">fashion</div>
-					<div class="sidebar-author">By Meg @ Curvy Sewing Collective</div>
-				</div>
-				<div class='sidebar-entry bad'>
-					<img src="https://peopledotcom.files.wordpress.com/2019/04/kate-hudson-6.jpg" class='sidebar-img' alt="Kate Hudson taking a mirror selfie">
-					<div class=sidebar-title><a href="https://people.com/health/kate-hudson-couple-pounds-from-goal-weight/">Kate Hudson Celebrates Being ‘a Couple Pounds from Goal Weight!’: ‘I Have Been Disciplined’</a></div>
-					<div class="sidebar-category">health & wellness</div>
-					<div class="sidebar-author">By Julie Mazziotta</div>
-				</div>
-			</div>
-
-			<div class="sidebar-block" id='sidebar-4'>
-				<div class='sidebar-entry good'>
-					<img src="https://everydayfeminism.com/wp-content/uploads/2015/12/maxresdefault-22.jpg" class='sidebar-img' alt="a fat woman with long curly hair wearing a green and black dress on a solid background. Two cartoom women are in th ebackground behind her. She is gesturing as if she were explaining something">
-					<div class=sidebar-title><a href="https://www.bustle.com/articles/26582-7-fat-girls-cant-wear-that-rules-totally-and-completely-disproven">7 "Fat Girls Can't Wear That" Rules Totally And Completely Disproven</a></div>
-					<div class="sidebar-category">fashion</div>
-					<div class="sidebar-author">By Marie Southard Ospina</div>
-				</div>
-				<div class='sidebar-entry bad'>
-					<img src="https://peopledotcom.files.wordpress.com/2019/01/melissa-mccarthy-3.jpg" class='sidebar-img' alt="Melissa McCarthy on a red carpet">
-					<div class=sidebar-title><a href="https://www.liveabout.com/styles-that-make-women-look-fat-2658614">7 Styles that Make Women Look Fat</a></div>
-					<div class="sidebar-category">fashion</div>
-					<div class="sidebar-author">By Paula Darnell</div>
-				</div>
-			</div>
-
-			
 		</div>
 
 
-		
+		<div class='dc-main'>
 
-		<div class='dc-article'>
-			<div class="sidebar-category">fashion</div>
-			<div class=article-title>9 simple rules for dressing when fat</div>
-			<div class="article-author">by Miriam Zisook</div>
-			<div class="article-body">
+			<div class='dc-sidebar'>
 
-				<div class='intro'>
-					<div class='bad'>Nobody wants to look fat, but there are so many myths out there about how to dress your best. Here we wade through the myths to share 9 tried and true tips for dressing to fit and flatter. Look 10 pounds thinner by tonight if you follow these wardrobe tricks.</div>
-					<div class='good'>Shopping for clothes has always been an emotionally loaded experience. I've cried in a lot of retail fitting rooms, and I know I'm not the only one. So many of the moments and milestones that should have been joyful for me were spent obsessing over what to wear and feeling uncomfortable in my skin and in my clothes. For me, making and altering clothing has become a way of resisting the harmful messages of my family and the diet and fashion industries. The power to make things allows me to honor and decorate my body as it is, rather than searching for the clothing sanctioned by others. I've taken charge of the beauty standards I hold myself to by making myself this wardrobe which exuberantly breaks all the flattering fashion rules I've been conditioned to obey by society, family and myself.</div>
-				</div>
-
-
-				<div id='rule1' class='rule'>
-					<div class='bad'>
-						<div class='rule-title'>
-							1. Streamline With (mono) Color, especially black
-						</div>
-						<div class='rule-source'>
-							<a href="https://www.glamour.com/gallery/how-to-dress-10-pounds-thinner">Glamour: How to Dress 10 Pounds Thinner</a>
-						</div>
-						<div class='rule-body'>
-							"Look taller and trimmer by dressing monochromatically head to toe. "Lose" five pounds by matching your pants or skirt, stockings and shoes. You'll seem 10 pounds lighter if they're all black! Bright colors and prints will call unnecessary attention to your shape and make you look bigger. Is the one-color thing too tame for your taste? Slip on a pair of bright shoes to shake things up." 
-						</div>
-						<img class='rule-img' src="/images/daisyChainImages/allBlack.png"  alt="">
+				<div class="sidebar-block" id='sidebar-1'>
+					<div class='sidebar-entry good'>
+						<img src="https://pixel.nymag.com/imgs/daily/intelligencer/2019/01/29/29-buzzfeed-quizzes.w700.h467.jpg" class="sidebar-img" alt='3 silly quiz headlines with the word quiz in a yellow dot'>
+						<div class=sidebar-title><a href="http://daisychainmagazine.com/quiz/">Which Dietland character are you?</a></div>
+						<div class="sidebar-category">quiz</div>
+						<div class="sidebar-author">By Eladio Reyes</div>
 					</div>
+					<div class='sidebar-entry bad'>
+						<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rachel-mcadams-as-regina-george-rachel-mcadams-2377254-1600-900-1533227188.jpg?resize=980:*" class='sidebar-img' alt="Regina George held aloft on the shoulders of several boys">
+						<div class=sidebar-title><a href="https://www.cosmopolitan.com/sex-love/quizzes/a56099/quiz-what-type-of-bitch-are-you/">What Type of B*tch Are You?</a></div>
+						<div class="sidebar-category">entertainment</div>
+						<div class="sidebar-author">By Hannah Smothers</div>
+					</div>
+				</div>
+
+				<div class="sidebar-block" id='sidebar-2'>
+					<div class='sidebar-entry good'>
+						<img src="/images/daisyChainImages/shesallfat20final.jpg" class='sidebar-img' alt="2 fat women stand next to each other holding hands. One is white the other is black. One is wearing a shirt that says 'riots not diets' the other's says 'feminist'">
+						<div class=sidebar-title><a href="https://shesallfatpod.com/">She's All Fat Pod</a></div>
+						<div class="sidebar-category">entertainment</div>
+						<div class="sidebar-author">By April K. Quioh & Sophia Carter-Kahn</div>
+					</div>
+					<div class='sidebar-entry bad'>
+						<img src="https://assets.vogue.com/photos/5b59fe5c1ae7f5247ec516eb/master/w_1560,c_limit/00-story-applying-concealer.jpg" class='sidebar-img' alt="2 young women with dewy skin sit on an oversized chair">
+						<div class=sidebar-title><a href="https://www.vogue.com/article/how-to-apply-concealer-pro-expert-guide-dark-circles-bags-blemishes">5 Ways to Make Your Concealer Look Invisible</a></div>
+						<div class="sidebar-category">beauty</div>
+						<div class="sidebar-author">By Lauren Valenti</div>
+					</div>
+				</div>
+
+				<div class='fake-sidebar-ad'>
 					<div class='good'>
-						<div class='rule-title'>
-							1. Look Joyful in Bright Colors
-						</div>
-						<div class='rule-body'>
-							For most of my life, I used clothes to hide my body, the only thing that mattered was whether things were flattering. When I started making clothes, I realized they could also be for fun and for decoration. Before I started making clothes I wanted to be camouflaged. Since I've started making clothes I hope people will notice them, so I can say joyfully, "thanks! I made it!"  
-						</div>
-						<img class='rule-img' src="/images/mendedHeart.jpg"  alt="">
+						<img class='ad-img' src="/images/daisyChainImages/yoga.png" alt="Jessamyn Stanley posing with the slogan 'every body yoga'">
 					</div>
-				</div>
-
-				<div id='rule2' class='rule'>
 					<div class='bad'>
-						<div class='rule-title'>2. Go for a midi-length skirt</div>
-						<div class='rule-source'><a href="https://www.whowhatwear.com/outfits-that-make-you-look-thinner/slide23">Who What Wear: 30 Summer Outfits That Make Everyone Look 10 Pounds Thinner</a></div>
-						<div class='rule-body'>"If your legs are one of your worry zones, you’re in luck! Midi-length skirts are perennially in style, and the combination of extra fabric and a cinch at the waist never fail to flatter your figure. Go for a hemline that hits below the kneecap to make legs look their absolute best."</div>
-						<img class='rule-img' src="/images/daisyChainImages/midiSkirt.png"  alt="">
-					</div>
-
-					<div class='good'>
-						<div class='rule-title'>
-							2. Decide what's sexy for yourself
-						</div>
-						<div class='rule-body'>
-							When I was in college I was out to lunch with a man (ahem, dad) and asked him to stop leering at our short skirt-wearing waitress. The man (ahem, dad) retorted, "You're just jealous because you can't wear a skirt like that." Since then, I avoided all things short and tight, knowing if I did I'd look disgusting and be de-sexualized (and supposedly be jealous—not grateful—I'd never be leered at and hyper-sexualized. Quite the double edged sword). I made myself this short skirt as a statement to myself that I don't have to give that gross sexist comment any more power for even one more minute. 
-						</div>
-						<img class='rule-img' src="/images/mendedHeart.jpg"  alt="">
+						<img class='ad-img' src="/images/daisyChainImages/bellyFatDouble.jpg" alt="ad for weight loss with a cartoon belly">
 					</div>
 				</div>
+
+				<div class="sidebar-block" id='sidebar-3'>
+					<div class='sidebar-entry good'>
+						<img src="https://i2.wp.com/curvysewingcollective.com/wp-content/uploads/2017/12/SPDB_everyone-1.png?w=768" class='sidebar-img' alt="4 women wearing versions of the same dress in different styles and colors. With a text overlay that says 'same pattern different bodies'">
+						<div class=sidebar-title><a href="http://curvysewingcollective.com/curvy-opinion-busting-myths-about-curvy-dressing/">Myth Busting About Curvy Dressing</a></div>
+						<div class="sidebar-category">fashion</div>
+						<div class="sidebar-author">By Meg @ Curvy Sewing Collective</div>
+					</div>
+					<div class='sidebar-entry bad'>
+						<img src="https://peopledotcom.files.wordpress.com/2019/04/kate-hudson-6.jpg" class='sidebar-img' alt="Kate Hudson taking a mirror selfie">
+						<div class=sidebar-title><a href="https://people.com/health/kate-hudson-couple-pounds-from-goal-weight/">Kate Hudson Celebrates Being ‘a Couple Pounds from Goal Weight!’: ‘I Have Been Disciplined’</a></div>
+						<div class="sidebar-category">health & wellness</div>
+						<div class="sidebar-author">By Julie Mazziotta</div>
+					</div>
+				</div>
+
+				<div class="sidebar-block" id='sidebar-4'>
+					<div class='sidebar-entry good'>
+						<img src="https://everydayfeminism.com/wp-content/uploads/2015/12/maxresdefault-22.jpg" class='sidebar-img' alt="a fat woman with long curly hair wearing a green and black dress on a solid background. Two cartoom women are in th ebackground behind her. She is gesturing as if she were explaining something">
+						<div class=sidebar-title><a href="https://www.bustle.com/articles/26582-7-fat-girls-cant-wear-that-rules-totally-and-completely-disproven">7 "Fat Girls Can't Wear That" Rules Totally And Completely Disproven</a></div>
+						<div class="sidebar-category">fashion</div>
+						<div class="sidebar-author">By Marie Southard Ospina</div>
+					</div>
+					<div class='sidebar-entry bad'>
+						<img src="https://peopledotcom.files.wordpress.com/2019/01/melissa-mccarthy-3.jpg" class='sidebar-img' alt="Melissa McCarthy on a red carpet">
+						<div class=sidebar-title><a href="https://www.liveabout.com/styles-that-make-women-look-fat-2658614">7 Styles that Make Women Look Fat</a></div>
+						<div class="sidebar-category">fashion</div>
+						<div class="sidebar-author">By Paula Darnell</div>
+					</div>
+				</div>
+
+
+			</div>
+
+
+
+
+			<div class='dc-article'>
+				<div class="sidebar-category">fashion</div>
+				<div class=article-title>9 simple rules for dressing when fat</div>
+				<div class="article-author">by Miriam Zisook</div>
+				<div class="article-body">
+
+					<div class='intro'>
+						<div class='bad'>Nobody wants to look fat, but there are so many myths out there about how to dress your best. Here we wade through the myths to share 9 tried and true tips for dressing to fit and flatter. Look 10 pounds thinner by tonight if you follow these wardrobe tricks.</div>
+						<div class='good'>Most women, especially fat women, are taught that the paramount rule of getting dressed is to flatter our figures. We keep a list of rules in our minds against which to evaluate every possible outfit. Is it too tight? Too bold? Too exposing? When we see beautiful clothes we think, 'maybe when we lose weight.' When we see something beautiful on another woman's body we think, "I could never pull that off." When following the standard rules set by society, choosing clothing sure is boring and fills us with self loathing. Here's a new list of fashion rules, to present ourselves with joy, to play with new ways to express ourselves, to be comfortable in our own skins, and and to raise a big fat middle finger to the patriarchy. </div>
+					</div>
+
+
+					<div id='rule1' class='rule'>
+						<div class='bad'>
+							<div class='rule-title'>
+								1. Streamline With (mono) Color, especially black
+							</div>
+							<div class='rule-source'>
+								<a href="https://www.glamour.com/gallery/how-to-dress-10-pounds-thinner">Glamour: How to Dress 10 Pounds Thinner</a>
+							</div>
+							<div class='rule-body'>
+								"Look taller and trimmer by dressing monochromatically head to toe. "Lose" five pounds by matching your pants or skirt, stockings and shoes. You'll seem 10 pounds lighter if they're all black! Bright colors and prints will call unnecessary attention to your shape and make you look bigger. Is the one-color thing too tame for your taste? Slip on a pair of bright shoes to shake things up." 
+							</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/daisyChainImages/allBlack.png"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
+						<div class='good'>
+							<div class='rule-title'>
+								1. Look Joyful in Bright Colors
+							</div>
+							<div class='rule-body'>
+								Clothes aren't just meant to hide your body, they can also be for fun and decoration. When you wear unique and playful pieces, especially handmade by you, you won't just see clothing as camouflage, you'll hope to get noticed. There's nothing better than answering a compliment with, "Thanks, I made it!"  
+							</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/outfits/fuckit.jpg"  alt="fuck it top">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
+					</div>
+
+					<div id='rule2' class='rule'>
+						<div class='bad'>
+							<div class='rule-title'>2. Go for a midi-length skirt</div>
+							<div class='rule-source'><a href="https://www.whowhatwear.com/outfits-that-make-you-look-thinner/slide23">Who What Wear: 30 Summer Outfits That Make Everyone Look 10 Pounds Thinner</a></div>
+							<div class='rule-body'>"If your legs are one of your worry zones, you’re in luck! Midi-length skirts are perennially in style, and the combination of extra fabric and a cinch at the waist never fail to flatter your figure. Go for a hemline that hits below the kneecap to make legs look their absolute best."</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/daisyChainImages/midiSkirt.png"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
+
+						<div class='good'>
+							<div class='rule-title'>
+								2. Decide what's sexy for yourself
+							</div>
+							<div class='rule-body'>
+								When you think of wearing a short skirt maybe, like me, you think of that time in college when you were out to lunch with a man (ahem, dad) and asked him to stop leering at that short skirt-wearing waitress. Maybe that man (ahem, dad) retorted, "You're just jealous because you can't wear a skirt like that." No? That didn’t happen to you? Ok, well whatever your version of the too-short skirt story is, maybe it gave you the idea you'd look disgusting and be de-sexualized in a too short skirt. Maybe that made you realize that if you were lucky enough not to be desexualized, the only other option was to be leered at and hyper-sexualized. Not great options. Put on a short skirt and don't give those gross sexist comments any more power for even one more minute.  
+							</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/outfits/redskirt.jpg"  alt="red skirt">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
+					</div>
 					<div id='rule3' class='rule'>
 						<div class='bad'>
 							<div class='rule-title'>3. Skin Tight Dresses—Might Not Be A Great Idea</div>
 							<div class='rule-source'><a href="https://www.liveabout.com/styles-that-make-women-look-fat-2658614">10 Styles that Make Women Look Fat</a></div>
 							<div class='rule-body'>"Wearing a dress that's skin-tight is a big mistake if you want to look thinner and taller. If a dress feels tight, if horizontal wrinkles are appearing (especially across the bust, hips, or thighs), or if lumps and bumps are clearly visible, the dress does not belong in your wardrobe. The too-tight dress effect is likely to be multiplied if the dress also has other unflattering features, such as being too short or too revealing. Certain fabrics can also compound the fattening effect."</div>
-							<img class='rule-img' src="/images/daisyChainImages/flowyDress.png"  alt="">
+							<div class='img-box'>
+								<img class='rule-img' src="/images/daisyChainImages/flowyDress.png"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
 						</div>
 
 						<div class='good'>
@@ -481,139 +539,174 @@
 								3. Don't give a f*ck in a tight dress
 							</div>
 							<div class='rule-body'>
-								All over Curvy Sewing Collective I see women of all sizes rocking "Wiggle Dresses"—dresses so tight you have to wiggle into them. I thought of wiggle dresses as anathema to curvy dressing before I saw so many women looking so freaking fabulous in them. I decided to go way the hell out of my comfort zone and make on for myself. When I wince at myself in it, I think of how beautiful I think other women look in them and remind myself the problem with my body might just be in my head. 
+								Recently I came across an online trend in the sewing community: #wiggledress. Wiggle dresses are dresses so tight you have to wiggle into them, and curvy sewists the world over are posting photos of themselves looking spectacular in them. Maybe, like I used to before I saw so many women looking so freaking fabulous in them, you think of wiggle dresses as anathema to curvy dressing. Try going way the hell out of your comfort zone and wearing one. When you wince at yourself in it, think of how beautiful those other women look in them and remind yourself the problem with your body might just be in your head (planted there by—-you guessed it—-patriarchy).  
 							</div>
-							<img class='rule-img' src="/images/mendedHeart.jpg"  alt="">
+							<div class='img-box'>
+								<img class='rule-img' src="/images/outfits/wiggle.JPG"  alt="wiggle dress">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
 						</div>
 					</div>
-						<div id='rule4' class='rule'>
-							<div class='bad'>
-								<div class='rule-title'>4. Avoid Horizontal Stripes</div>
-								<div class='rule-source'><a href="https://www.dailymail.co.uk/femail/article-2164030/Yes-stripes-DO-make-look-fat-Unless-theyre-narrow-black-horizontal-Confused-Heres-make-work-you.html">Daily Mail, Yes: Stripes Do Make you Look Fat</a></div>
-								<div class='rule-body'>"For years mothers have told their daughters that horizontal stripes do the female figure no favors and that vertical ones are more flattering. As a result, many women have spent their lives avoiding horizontal hoops for fear of looking fat." "Val Watham, 53, was unconvinced by research which claimed horizontal stripes flatter the figure. She undertook her own research, dressing models in a variety of striped designs and asking members of the public to rate their appearance. The findings demonstrated that horizontal stripes do make people appear wider, while vertical stripes make people appear taller."</div>	
+					<div id='rule4' class='rule'>
+						<div class='bad'>
+							<div class='rule-title'>4. Avoid Horizontal Stripes</div>
+							<div class='rule-source'><a href="https://www.dailymail.co.uk/femail/article-2164030/Yes-stripes-DO-make-look-fat-Unless-theyre-narrow-black-horizontal-Confused-Heres-make-work-you.html">Daily Mail, Yes: Stripes Do Make you Look Fat</a></div>
+							<div class='rule-body'>"For years mothers have told their daughters that horizontal stripes do the female figure no favors and that vertical ones are more flattering. As a result, many women have spent their lives avoiding horizontal hoops for fear of looking fat." "Val Watham, 53, was unconvinced by research which claimed horizontal stripes flatter the figure. She undertook her own research, dressing models in a variety of striped designs and asking members of the public to rate their appearance. The findings demonstrated that horizontal stripes do make people appear wider, while vertical stripes make people appear taller."</div>
+							<div class='img-box'>
 								<img class='rule-img' src="/images/daisyChainImages/verticalStripes.png"  alt="">
-							</div>
-
-							<div class='good'>
-								<div class='rule-title'>
-									4. Enjoy all directions of stripes
-								</div>
-								<div class='rule-body'>
-									For years I didn't wear horizontal stripes because my mom (and probably also your mom) said they make me look fat. That's the dumbest shit I've ever heard—as if someone can't tell what I look like when I wear polka dots but my body blows up like a blimp (thanks Mom for the blimp comparison) in stripes. I made myself a whole bunch of fun clothes with horizontal stripes to celebrate saying goodbye to this nonsense fashion rule.
-								</div>
-								<img class='rule-img' src="/images/mendedHeart.jpg"  alt="">
+								<div class='about-outfit'>about this outfit</div>
 							</div>
 						</div>
-							<div id='rule5' class='rule'>
-								<div class='bad'>
-									<div class='rule-title'>5. Cover up leggings with a tunic</div>
-									<div class='rule-source'><a href="https://www.liveabout.com/styles-that-make-women-look-fat-2658614">10 Styles that Make Women Look Fat</a></div>
-									<div class='rule-body'>"Skinny jeans [and leggings] look best when worn by skinny women. Just because skinny jeans are available in all sizes doesn't mean that they're a flattering style choice. Jeans with straight legs almost always look better on short women (unless they wear a tiny size) than skinny jeans do."</div>
-									<img class='rule-img' src="/images/daisyChainImages/tunic.png"  alt="">
-								</div>
 
-								<div class='good'>
-									<div class='rule-title'>
-										5. Be extremely comfortable in leggings as pants
-									</div>
-									<div class='rule-body'>
-										When leggings first started to become pants, I told myself they were only pants for thin women. Dressing for yoga and exercise meant pulling together creative outfits that hid my athleisure under tunics and skirts. I saw women all around me comfy AF in leggings, but that wasn't for me.  I made myself some bold leggings (and some plain ones) that I absolutely love rocking as pants.  
-									</div>
-									<img class='rule-img' src="/images/mendedHeart.jpg"  alt="">
-								</div>
+						<div class='good'>
+							<div class='rule-title'>
+								4. Never change your stripes
 							</div>
-								<div id='rule6' class='rule'>
-									<div class='bad'>
-										<div class='rule-title'>6. Toss a light jacket over your shoulders</div>
-										<div class='rule-source'><a href="https://www.whowhatwear.com/outfits-that-make-you-look-thinner/slide23">Who What Wear: 30 Summer Outfits That Make Everyone Look 10 Pounds Thinner</a></div>
-										<div class='rule-body'>"If your problem areas tend to reside more in your breadth—in other words, your shoulders, upper arms, and back area—tossing a light jacket across your shoulders does worlds to melt off the pounds."</div>
+							<div class='rule-body'>
+								For years I didn't wear horizontal stripes because my mom said they make me look fat. Oh really! Your mom too?! What a coincidence! That's the dumbest shit I've ever heard—as if someone can't tell what I look like when I wear polka dots but my body blows up like a blimp (thanks Mom for the blimp comparison) in stripes. A tiger can’t change her stripes, and neither should you! Make yourself a whole bunch of fun clothes with horizontal stripes to celebrate saying goodbye to this nonsense fashion rule. 
+							</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/outfits/stripes.JPG"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
+					</div>
+					<div id='rule5' class='rule'>
+						<div class='bad'>
+							<div class='rule-title'>5. Cover up leggings with a tunic</div>
+							<div class='rule-source'><a href="https://www.liveabout.com/styles-that-make-women-look-fat-2658614">10 Styles that Make Women Look Fat</a></div>
+							<div class='rule-body'>"Skinny jeans [and leggings] look best when worn by skinny women. Just because skinny jeans are available in all sizes doesn't mean that they're a flattering style choice. Jeans with straight legs almost always look better on short women (unless they wear a tiny size) than skinny jeans do."</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/daisyChainImages/tunic.png"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
 
-										<img class='rule-img' src="/images/daisyChainImages/jacket.png"  alt="">
-									</div>
+						<div class='good'>
+							<div class='rule-title'>
+								5. Be extremely comfortable in leggings as pants
+							</div>
+							<div class='rule-body'>
+								When leggings first started to become pants, I told myself they were only pants for thin women. Dressing for yoga and exercise meant pulling together creative outfits that hid my athleisure under tunics and skirts. I saw women all around me comfy AF in leggings, but that wasn't for me.  Get yourself some bold leggings (and some plain ones) that you'll absolutely love rocking as pants. Embrace that soft caress of lycra against your liberated legs.  
+							</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/outfits/avocado.jpg"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
+					</div>
+					<div id='rule6' class='rule'>
+						<div class='bad'>
+							<div class='rule-title'>6. Toss a light jacket over your shoulders</div>
+							<div class='rule-source'><a href="https://www.whowhatwear.com/outfits-that-make-you-look-thinner/slide23">Who What Wear: 30 Summer Outfits That Make Everyone Look 10 Pounds Thinner</a></div>
+							<div class='rule-body'>"If your problem areas tend to reside more in your breadth—in other words, your shoulders, upper arms, and back area—tossing a light jacket across your shoulders does worlds to melt off the pounds."</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/daisyChainImages/jacket.png"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
 
-									<div class='good'>
-										<div class='rule-title'>
-											6. Bare your arms
-										</div>
-										<div class='rule-body'>
-											In 6th grade I got this pastel green and yellow tank top I absolutely loved. The first time I wore it outside to play in the front yard with our neighbors my mom looked at me uncomfortably and suggested it would look cute under something with sleeves. I didn't wear a sleeveless top again for more than 10 years. A few years ago I decided I'd had enough and began tentatively showing my arms in my clothes. At first I always brought a just-in-case-I-feel-self-conscious-cardigan with me no matter how hot it was. Now, I'm sick of sweating and passing on cute dresses and tops because they're for someone else's body. Bye bye cardigans in 90 degree heat, hello dinosaur dress!
-										</div>
-										<img class='rule-img' src="/images/mendedHeart.jpg"  alt="">
-									</div>
-								</div>
-									<div id='rule7' class='rule'>
-										<div class='bad'>
-											<div class='rule-title'>7. Pick Simple, unadorned denim</div>
-											<div class='rule-source'><a href="https://www.instyle.com/fashion/clothing/12-easy-ways-look-thinner-tonight">In Style, 12 Easy Ways to Look Thinner By Tonight</a></div>
-											<div class='rule-body'>"Clean, streamlined jeans are the way to go. The most flattering styles are dark and feature unembellished pockets. Avoid extra details that catch the eye and give the illusion of bulk-think twice about tags, grommets, or decorative extras. The leanest silhouettes of all: boot cut and straight leg."</div>
+						<div class='good'>
+							<div class='rule-title'>
+								6. Bare your arms
+							</div>
+							<div class='rule-body'>
+								In 6th grade I got a new tank top I absolutely loved. The first time I wore it outside to play in the front yard with my neighbors my mom looked at me uncomfortably and suggested it would look cute under something with sleeves. I didn't wear a sleeveless top again for more than 10 years. Oh, wow! Something like that happened to you too?! You've had enough of sweating through the summer hidden under sweaters and passing up cute tops and dresses because they're for someone else's body. Say goodbye to cardigans in 90 degree heat, and say hello to dinosaur sundresses (or the playful prints of your choice)! 
+							</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/outfits/dino.jpg"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
+					</div>
+					<div id='rule7' class='rule'>
+						<div class='bad'>
+							<div class='rule-title'>7. Pick Simple, unadorned denim</div>
+							<div class='rule-source'><a href="https://www.instyle.com/fashion/clothing/12-easy-ways-look-thinner-tonight">In Style, 12 Easy Ways to Look Thinner By Tonight</a></div>
+							<div class='rule-body'>"Clean, streamlined jeans are the way to go. The most flattering styles are dark and feature unembellished pockets. Avoid extra details that catch the eye and give the illusion of bulk-think twice about tags, grommets, or decorative extras. The leanest silhouettes of all: boot cut and straight leg."</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/daisyChainImages/denim.png"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
 
-											<img class='rule-img' src="/images/daisyChainImages/denim.png"  alt="">
-										</div>
+						<div class='good'>
+							<div class='rule-title'>
+								7. "Pull off" decorative prints and bold looks
+							</div>
+							<div class='rule-body'>
+								When clothes are camouflage, all kinds of fun styles are off limits. I've been seeing an explosion of cute jumpsuit styles and thinking they were off limits to me. I've been seeing an explosion of fun floral prints and thinking they were off limits to me. I've been seeing printed and color denims and thinking they were off limits to me. Now I present you with this rocking floral denim jumpsuit. I dare you to pick out that too bold fashion piece and wear it out—delight in how nobody but you even thinks you're doing it because I dared you—you look great. All you need to do to pull it off is put it on! 
+							</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/outfits/jumpsuit.jpg"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
+					</div>
+					<div id='rule8' class='rule'>
+						<div class='bad'>
+							<div class='rule-title'>8. Layer It Up—And Make-Believe</div>
+							<div class='rule-source'><a href="https://www.stylecraze.com/articles/dresses-to-hide-tummy/#gref">Style Craze: How To Dress To Hide Belly Fat</a></div>
+							<div class='rule-body'>"Layering is another technique that magically hides it all away, shifting the focus anywhere but your tummy. Combinations like the tank top with plaid shirt; knee-length dress and a cape; trousers with a shirt and blazer or shrug etc. work pretty well to your advantage. Layers that are unbuttoned gives it a significant effect making you look taller. Make-believe in the truest sense."</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/daisyChainImages/layering.jpg"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
 
-										<div class='good'>
-											<div class='rule-title'>
-												7. "Pull off" decorative prints and bold looks
-											</div>
-											<div class='rule-body'>
-												When clothes are camouflage, all kids of fun styles are off limits. I've been seeing an explosion of cute jumpsuit styles and thinking they were off limits to me. I've been seeing an explosion of fun floral prints and thinking they were off limits to me. I've been seeing printed and color denims and thinking they were off limits to me. Now I present you with this rocking floral denim jumpsuit.  
-											</div>
-											<img class='rule-img' src="/images/mendedHeart.jpg"  alt="">
-										</div>
-									</div>
-										<div id='rule8' class='rule'>
-											<div class='bad'>
-												<div class='rule-title'>8. Layer It Up—And Make-Believe</div>
-												<div class='rule-source'><a href="https://www.stylecraze.com/articles/dresses-to-hide-tummy/#gref">Style Craze: How To Dress To Hide Belly Fat</a></div>
-												<div class='rule-body'>"Layering is another technique that magically hides it all away, shifting the focus anywhere but your tummy. Combinations like the tank top with plaid shirt; knee-length dress and a cape; trousers with a shirt and blazer or shrug etc. work pretty well to your advantage. Layers that are unbuttoned gives it a significant effect making you look taller. Make-believe in the truest sense."</div>
+						<div class='good'>
+							<div class='rule-title'>
+								8. You have nothing to hide
+							</div>
+							<div class='rule-body'>
+								My senior year of high school there was a day when underclassmen in stage crew dressed up  as seniors. The kid who dressed as me wore tons of layers—long sleeve T under short sleeve T, flared jeans under a knee length skirt, a cardigan, and a scarf. I've thought about that a lot since then—it was so transparent how much I was hiding. Now I sometimes just wear one thing, and you too can wear just one thing! Pick out a favorite top or dress and then stop, don't add a cardigan, don't add a jacket, no need for a scarf, just take your totally dressed enough self to into the sunshine.   
+							</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/outfits/oops.jpg"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
+					</div>
+					<div id='rule9' class='rule'>
+						<div class='bad'>
+							<div class='rule-title'>9. Embrace Shapewear</div>
+							<div class='rule-source'><a href="https://abcnews.go.com/GMA/shapewear-women-fake-til-make/story?id=12577634">ABC, Fake It 'Til You Make It: Best Shapewear for Women</a></div>
+							<div class='rule-body'>"You should try these if you have not already. They are your rescue rangers; I could not wait to get my hands on these. It basically, tucks the unflattering flab and tires back into the tummy, at least it creates the illusion. These soft, comfortable and tight-fitting undergarments come in a lot of variants, taking full control of your tummy area. You can easily get away with those body hugging dresses that were forever part of your wish list. It makes a lot of difference, especially if you make smart choices." </div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/daisyChainImages/shapewear.png"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
 
-												<img class='rule-img' src="/images/daisyChainImages/layering.jpg"  alt="">
-											</div>
+						<div class='good'>
+							<div class='rule-title'>
+								9. Really, nothing at all to hide
+							</div>
+							<div class='rule-body'>
+								In high school when my friends went to the beach (an experience I dreaded) I wore shapewear under jeans and said I hated swimming. Years later I found an emerald green suit that fit me and I swam at the beach with friends for the first time. Turns out, the beach is my favorite place! When I saw an online campaign declaring that every body is a bikini body, it was a revelation. Here were women claiming the right to define a good enough body. Could it be that all we need to do to have a good enough body to enjoy the beach is decide our bodies are good enough to enjoy the beach?  I made myself this emerald bikini as an homage to that emerald one piece from years ago, and the first suit I ever felt comfortable in, but this time with some belly showing. Find a swimsuit you love, maybe even one that doesn't come down to your knees and elbows, maybe even one that shows a belly roll, and hit the water with nothing to hide.
+							</div>
+							<div class='img-box'>
+								<img class='rule-img' src="/images/outfits/bikini.jpg"  alt="">
+								<div class='about-outfit'>about this outfit</div>
+							</div>
+						</div>
 
-											<div class='good'>
-												<div class='rule-title'>
-													8. You have nothing to hide
-												</div>
-												<div class='rule-body'>
-													My senior year of high school there was a day when underclassmen in stage crew dressed up  as seniors. The kid who dressed as me wore tons of layers—long sleeve T under short sleeve T, flared jeans under a knee length skirt, a cardigan, and a scarf. I've thought about that a lot since then—it was so transparent how much I was hiding. Now I sometimes just wear one thing! 
-												</div>
-												<img class='rule-img' src="/images/mendedHeart.jpg"  alt="">
-											</div>
-										</div>
-											<div id='rule9' class='rule'>
-												<div class='bad'>
-													<div class='rule-title'>9. Embrace Shapewear</div>
-													<div class='rule-source'><a href="https://abcnews.go.com/GMA/shapewear-women-fake-til-make/story?id=12577634">ABC, Fake It 'Til You Make It: Best Shapewear for Women</a></div>
-													<div class='rule-body'>"You should try these if you have not already. They are your rescue rangers; I could not wait to get my hands on these. It basically, tucks the unflattering flab and tires back into the tummy, at least it creates the illusion. These soft, comfortable and tight-fitting undergarments come in a lot of variants, taking full control of your tummy area. You can easily get away with those body hugging dresses that were forever part of your wish list. It makes a lot of difference, especially if you make smart choices." </div>
+					</div>
+				</div>
 
-													<img class='rule-img' src="/images/daisyChainImages/shapewear.png"  alt="">
-												</div>
+			</div>
 
-												<div class='good'>
-													<div class='rule-title'>
-														9. Really, nothing at all to hide
-													</div>
-													<div class='rule-body'>
-														In high school when my friends went to the beach (an experience I dreaded) I wore shapewear under jeans and said I hated swimming. Years later I found an emerald green suit that fit me and I swam at the beach with friends for the first time. Turns out, the beach is my favorite place! When I saw an online campaign declaring that every body is a bikini body, it was a revelation. Here were women giving claiming the right to define a good enough body. Could it be that all I needed to do to have a good enough body to enjoy the beach was decide my body was good enough to enjoy the beach?  I made myself this emerald bikini as an homage to that emerald one piece from years ago, and the first suit I ever felt comfortable in, but this time with some belly showing.
-													</div>
-													<img class='rule-img' src="/images/mendedHeart.jpg"  alt="">
-												</div>
-
-											</div>
-										</div>
-
-									</div>
-
-										<div class='fake-right-ad'>
-											<div class='good'><img src="/images/daisyChainImages/manatee.jpg"  alt="manatee saying'Don't say such mean things about yourself. That's my favorite person you're talking about'"></div>
-											<div class='bad'><img src="/images/daisyChainImages/bellyFat2.jpeg"  alt="advertisement for weight loss with a cartoon">
-											</div>
-											<div class='good'><img src="/images/daisyChainImages/fuckit.jpeg"  alt="ad for 'the fuck it diet' book"></div>
-											<div class='bad'><img src="/images/daisyChainImages/nutrisystem.jpg"  alt="advertisement for nutrisystem weight loss food">
-											</div>
-										</div>
-</div>
-									</div>
+			<div class='fake-right-ad'>
+				<div class='good'><img src="/images/daisyChainImages/manatee.jpg"  alt="manatee saying'Don't say such mean things about yourself. That's my favorite person you're talking about'"></div>
+				<div class='bad'><img src="/images/daisyChainImages/bellyFat2.jpeg"  alt="advertisement for weight loss with a cartoon">
+				</div>
+				<div class='good'><img src="/images/daisyChainImages/fuckit.jpeg"  alt="ad for 'the fuck it diet' book"></div>
+				<div class='bad'><img src="/images/daisyChainImages/nutrisystem.jpg"  alt="advertisement for nutrisystem weight loss food">
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
-								</body>
+</body>

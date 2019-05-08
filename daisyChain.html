@@ -6,18 +6,23 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=172118673255993&autoLogAppEvents=1"></script>
+
+	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
 </head>
 
 
 
 <style>
-	@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato');
+	@import url('https://fonts.googleapis.com/css?family=Lato');
+	@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900');
 	
 	body {
 		padding: 1em;
 		background-color: ghostWhite;
-		line-height: 1.6em;
+		line-height: 1.9em;
 	}
 
 	a:hover {
@@ -40,11 +45,12 @@
 	}
 
 	.dc-logo {
-		font-family: Abril Fatface, cursive;
+		font-family: 'Playfair Display', serif;
+		font-weight: 900;
 		font-size: 1.2em;
 		margin-right: 1vw;
 		margin-left: 1vw;
-		color: goldenRod;
+		color: #FF6F61 /*#f1ABB9*/;
 	}
 
 	.menu-item {
@@ -94,8 +100,9 @@
 	/**/
 
 	.sidebar-category {
-		font-family: Lato;
-		color: goldenrod;
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
+		color: #FF6F61;
 	}
 	.sidebar-author {
 		font-family: Lato;
@@ -112,7 +119,7 @@
 	}
 
 	.dc-article {
-		width: 54vw;
+		width: 48vw;
 		display: inline-block;
 		padding: 1vw;
 		padding-left: 2vw;
@@ -121,7 +128,8 @@
 	}
 
 	.article-title {
-		font-family: Abril Fatface;
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
 		font-size: 1.8em;
 		line-height: 2em;
 		color: black;
@@ -140,7 +148,8 @@
 	}
 
 	.rule-title {
-		font-weight: bold;
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
 		color: black;
 		margin-top: 2em;
 	}
@@ -239,17 +248,60 @@
 		height:60px;
 		border: 1px gray;
 		object-fit: cover;
-		float:right;
 		display:inline-block;
+		position: absolute;
+    	top: 60vh;
+    	margin-left: 5vw;
 	}
 
 	.sidebar-title {
-		font-family: Abril Fatface;
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
 	}
 
 	.sidebar-title:hover {
-		font-family: Abril Fatface;
+		font-family: 'Playfair Display', serif;
+		font-weight: 700;
 		text-decoration: underline;
+	}
+
+	.footer {
+		position: relative;
+		margin-left: -2vw;
+		width: 100vw;
+		background-color: dimGray; 
+		margin-top: 3vw;
+		padding: 2em;
+		height: 30vh;
+
+
+	}
+
+	.masthead-left {
+		position: absolute;
+		color: ghostwhite;
+		font-size: .75em;
+		font-family: Lato, sans-serif;		
+		top: 3vw;
+		left: 18vw;
+		width: 50vw;
+	}
+
+	.masthead-right {
+		position: absolute;
+		color: ghostwhite;
+		font-size: .75em;
+		font-family: Lato, sans-serif;
+		top: 3vw;
+		left: 75vw;
+		width: 25vw;
+	}
+
+	#socials {
+		display:block;
+		position: absolute;
+		left: 3vw;
+		top: 6vw;
 	}
 
 	/*
@@ -357,7 +409,7 @@
 			<span class='dc-logo'>daisy chain</span>
 			<span class='menu-item'>beauty</span>
 			<span class='menu-item'>fashion</span>
-			<span class='menu-item'>lifestyle</span>
+			<span class='menu-item'>health & wellness</span>
 			<span class='menu-item'>entertainment</span>
 			<span class='menu-item'>news</span>
 			<span class='menu-item'>dear kitty</span>
@@ -707,6 +759,14 @@
 		</div>
 	</div>
 
-
+	<div class='footer'>
+		<span class='dc-logo'>daisy chain</span>
+		<div class='masthead-left'> Daisy Chain is a pretend women's magazine. It was invented by Sarai Walker in the book <a href="http://www.saraiwalker.com/dietland">Dietland</a>. I pay homage to it here in my own project inspired in part by Dietland. If you're wondering what the heck this thing is, you can read more about it here. <br>TLDR; I got raised by standards of beauty and rules for how to dress myself that are bullshit. You probably did too. I'm trying to unlearn them. I hope sharing how I am doing that will mean something to you.</div>
+		<div class='masthead-right'>About the author: Miriam Zisdook is a social worker and designer at Powderhouse Studios.<br><br>About the photographer: Carlie Febo...</div>
+		<div id='socials'>
+			<div class="fb-share-button" data-href="#" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+			<div><a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/" target="_blank"></a></div>
+			</div>
+		</div>
 
 </body>

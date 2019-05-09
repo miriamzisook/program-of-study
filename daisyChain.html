@@ -180,7 +180,7 @@
 		object-fit: cover;
 	}
 
-/*bottom placement */
+	/*bottom placement */
 	/*.about-outfit {     
 		position:absolute;
 		top: 80%;
@@ -192,117 +192,117 @@
 		padding: 2%;
 
 
-	}*/
-/*side placement */
-	.about-outfit {
-		position:absolute;
-		top: 0;
-		left: 25vw;
-		height: 94%;
-		width: 12vw;
-		background-color: gainsboro;
-		color: black;
-		font-size: .75em;
-		padding: 2%;
-		padding-bottom: 0%;
+		}*/
+		/*side placement */
+		.about-outfit {
+			position:absolute;
+			top: 0;
+			left: 25vw;
+			height: 94%;
+			width: 12vw;
+			background-color: gainsboro;
+			color: black;
+			font-size: .75em;
+			padding: 2%;
+			padding-bottom: 0%;
 
 
-	}
+		}
 
-	p {
-		padding: 1vw;
-	}
+		p {
+			padding: 1vw;
+		}
 
-	.ad-img-banner {
-		width:100%;
-		object-fit: cover;
-	}
+		.ad-img-banner {
+			width:100%;
+			object-fit: cover;
+		}
 
-	.ad-img {
-		width: 70%;
-		height:70%;
-		object-fit: contain;
-	}
+		.ad-img {
+			width: 70%;
+			height:70%;
+			object-fit: contain;
+		}
 
-	.fake-banner-ad {
-		width:90vw;
-		height:14vw;
-		border: 1px dimGray;
-		margin:auto;
-		margin-bottom: 3em;
-		padding: .4vw;
-	}
+		.fake-banner-ad {
+			width:90vw;
+			height:14vw;
+			border: 1px dimGray;
+			margin:auto;
+			margin-bottom: 3em;
+			padding: .4vw;
+		}
 
-	.fake-sidebar-ad {
-		width:18vw;
-		height:24vw;
-		border: 1px dimGray;
-		margin:auto;
-		margin-bottom: 1em;
-		padding: .4vw;
-	}
-
-
-	.fake-right-ad {
-		width: 40px;
-		height:60px;
-		border: 1px gray;
-		object-fit: cover;
-		display:inline-block;
-		position: absolute;
-    	top: 60vh;
-    	margin-left: 5vw;
-	}
-
-	.sidebar-title {
-		font-family: 'Playfair Display', serif;
-		font-weight: 700;
-	}
-
-	.sidebar-title:hover {
-		font-family: 'Playfair Display', serif;
-		font-weight: 700;
-		text-decoration: underline;
-	}
-
-	.footer {
-		position: relative;
-		margin-left: -2vw;
-		width: 100vw;
-		background-color: dimGray; 
-		margin-top: 3vw;
-		padding: 2em;
-		height: 30vh;
+		.fake-sidebar-ad {
+			width:18vw;
+			height:24vw;
+			border: 1px dimGray;
+			margin:auto;
+			margin-bottom: 1em;
+			padding: .4vw;
+		}
 
 
-	}
+		.fake-right-ad {
+			width: 40px;
+			height:60px;
+			border: 1px gray;
+			object-fit: cover;
+			display:inline-block;
+			position: absolute;
+			top: 60vh;
+			margin-left: 5vw;
+		}
 
-	.masthead-left {
-		position: absolute;
-		color: ghostwhite;
-		font-size: .75em;
-		font-family: Lato, sans-serif;		
-		top: 3vw;
-		left: 18vw;
-		width: 50vw;
-	}
+		.sidebar-title {
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+		}
 
-	.masthead-right {
-		position: absolute;
-		color: ghostwhite;
-		font-size: .75em;
-		font-family: Lato, sans-serif;
-		top: 3vw;
-		left: 75vw;
-		width: 25vw;
-	}
+		.sidebar-title:hover {
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			text-decoration: underline;
+		}
 
-	#socials {
-		display:block;
-		position: absolute;
-		left: 3vw;
-		top: 6vw;
-	}
+		.footer {
+			position: relative;
+			margin-left: -2vw;
+			width: 100vw;
+			background-color: dimGray; 
+			margin-top: 3vw;
+			padding: 2em;
+			height: 30vh;
+
+
+		}
+
+		.masthead-left {
+			position: absolute;
+			color: ghostwhite;
+			font-size: .75em;
+			font-family: Lato, sans-serif;		
+			top: 3vw;
+			left: 18vw;
+			width: 50vw;
+		}
+
+		.masthead-right {
+			position: absolute;
+			color: ghostwhite;
+			font-size: .75em;
+			font-family: Lato, sans-serif;
+			top: 3vw;
+			left: 75vw;
+			width: 25vw;
+		}
+
+		#socials {
+			display:block;
+			position: absolute;
+			left: 3vw;
+			top: 6vw;
+		}
 
 	/*
 	.sidebar-block:hover .good {
@@ -371,7 +371,16 @@
 	<script>
 
 		$(document).ready(function(){
-			$("#ruin-it").hide(); 
+			var counter = 0; 
+			$("#ruin-it").hide();
+				
+				for (var i =0; i <=2; i ++){
+					setTimeout(glitch, Math.random()*10000);
+				}
+				
+				
+
+ 
 
 			$("#fix-it").click(function(){
 				console.log("fix it clicked")
@@ -389,7 +398,35 @@
 				$("#fix-it").show();
 			})
 
+			function glitch(){
+				$(".good").show();
+				$(".bad").hide();
+				$("#ruin-it").show();
+				$("#fix-it").hide();
+				counter++; 
+				console.log(counter); 
 
+
+				if (counter == 3){
+					console.log("ending on good");
+					$(".bad").hide();
+					$(".good").show();
+					$("#ruin-it").show();
+					$("#fix-it").hide();
+
+				}
+
+				else {
+					console.log("returning to bad");
+					setTimeout(function(){
+					$(".bad").show();
+					$(".good").hide();
+					$("#ruin-it").hide();
+					$("#fix-it").show();
+				}, 500);
+
+				}
+			}
 
 
 
@@ -766,7 +803,7 @@
 		<div id='socials'>
 			<div class="fb-share-button" data-href="#" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
 			<div><a data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/" target="_blank"></a></div>
-			</div>
 		</div>
+	</div>
 
 </body>

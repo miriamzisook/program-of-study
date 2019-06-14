@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daisy Chain Magazine</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style>
+
+
+
+	@font-face {
+    font-family: "Baton";
+    src: url("fonts/BatonTurbo-Bold.woff") format('woff');
+}
+
+
+@font-face {
+    font-family: "AdelleHeavy";
+    src: url("fonts/adelle/Adelle_Heavy.woff") format('woff');
+}
+
+@font-face {
+    font-family: "AdelleLight";
+    src: url("fonts/adelle/Adelle_light.woff") format('woff');
+}
+
+
+body {
+	margin: 0;
+	font-family: AdelleLight;
+	line-height: 1.75em;
+	color: #4f4b4b;
+}
+	
+#nav-bar{
+	height: 6vh;
+	background-color: lightgray;
+	padding-top: 1rem;
+}
+
+.banner-ad {
+	height: 30vh;
+	width: calc(5/6*100vw);
+	/*background-color: lightgray;*/
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.header-image-row {
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	/*background-color: lightgray;*/
+	height: 42vw;
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 1rem;
+
+}
+
+.header-image {
+	/*background-color: gray;*/
+	overflow: hidden;
+}
+
+#meta {
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	/*background-color: lightgray;*/
+	height: 50vh;
+	width: calc(4/6*100vw);
+
+
+}
+
+#meta > div {
+	/*#meta div this means any div inside of meta, even if it's a grandchild, #meta>div is just direct descendent*/
+	text-align: center;
+}
+
+.intro {
+	margin-left:10rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 50vw;
+}
+
+.rule-ad-box {
+	margin-left:10rem;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+	/*background-color: lightgray;*/
+}
+
+.rule-box {
+	width: 50vw;
+	display:inline-block;
+}
+
+.ad-box {
+	/*background-color: blue;*/
+	height: 60vh;
+	margin-left: 4rem;
+	display: inline-block;
+	width: 30vw;
+	vertical-align: top;
+	
+
+}
+
+.ad-img {
+	border: 1px solid gray;
+}
+
+
+.rule-img {
+	width: 100%;
+	background-color: orange;
+	/*height: 40vh;*/
+	margin-bottom: 1rem;
+}
+
+.rule-number, .rule-copy {
+	display: inline-block;
+}
+
+.rule-number {
+	width: 18%;
+	height: 20%;
+	vertical-align: top;
+	color: #FA7268;
+	font-family: AdelleHeavy;
+	font-size: 10rem;
+	margin-top: 3rem;
+}
+
+.rule-copy {
+	width: 80%;
+	height: 20%;
+/*	background-color: orange;
+*/	vertical-align: top;
+}
+
+
+#logo-daisy {
+	font-family: Baton;
+	font-size: 1.5rem;
+	color: #FA7268;
+	font-variant: small-caps;
+	padding-left: 1rem;
+}
+
+#logo-chain {
+	font-size: 1rem;
+	color: #4f4b4b;
+	font-family: AdelleLight;
+}
+
+.menu-item {
+	font-family: Baton;
+	font-size: .75rem;
+	margin-left: 2rem;
+	vertical-align: center;
+}
+
+.menu-item:hover {
+	color: black;
+}
+
+img {
+	width: 100%;
+}
+
+#category {
+	color: #FA7268;
+}
+
+#title {
+	font-family: Baton;
+	font-size: 3rem;
+	line-height: 4rem;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+}
+
+#slides {
+	font-family: Baton;
+	margin-bottom: 2rem;
+
+}
+
+.sans-serif-numbers {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#subtitle {
+}
+
+#byline {
+	font-family: Baton;
+	margin: 2rem;
+	color: #FA7268;
+}
+
+#date {
+
+}
+
+.rule-title {
+	font-family: Baton;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+.rule-body {
+
+}
+
+.rule-about {
+	font-family: sans-serif;
+	font-size: .75rem;
+	line-height: 1.5rem;
+}
+
+.about-outfit {
+	color:  #FA7268;
+	font-family: Baton;
+	line-height: 1rem;
+}
+
+#big-back-button {
+	position: fixed;
+	top: 50vh;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+	color:white;
+	background-color: #FA7268;
+	border-radius: 5rem;
+	left: -6rem;
+	text-align: right;
+	padding: 2rem;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding-left: 6rem;
+	padding-right: 1rem;
+	
+}
+
+</style>
+
+</head>
+
+
+<body>
+	<a href="index.html"><div id="big-back-button"><i class="fas fa-arrow-left"></i></div></a>
+
+	<div id="nav-bar">
+		<span class='menu-item'><i class="fas fa-bars"></i></span>
+		<span id='logo-daisy'>daisy</span><span id='logo-chain'>Chain</span>
+		<span class='menu-item'>beauty</span>
+			<span class='menu-item'>fashion</span>
+			<span class='menu-item'>wellness</span>
+			<span class='menu-item'>entertainment</span>
+			<span class='menu-item'>news</span>
+			<span class='menu-item'>dear kitty</span>
+			<span id="back-button" class="menu-item"><a href="index.html"><i style="color: #FA7268;" class="fas fa-arrow-circle-left"></i></a></span>
+			<span class='menu-item'><i style="float:right;padding-right:1rem;margin-top:.8rem" class="fas fa-search"></i></span>
+
+	</div>
+	<div class='banner-ad'>
+		<img src="images/daisyChainImages/fkdp3.png" alt="banner advertisement for 'Fat Kid Dance Party' photo of a white woman with blonde hair surrounded by cartoon shapes. Caption says 'Fat Kid Dance Party aerobics is for people of all sizes to heal from body oppression'">
+	</div>
+
+	<div class="header-image-row">
+		<!-- replace with images not divs, or set as background image -->
+		<div class='header-image' id='header-1'>
+			<img src="images/selected/dinoDress.jpg" alt="photo of the author wearing a sleeveless dress with dinosaur print, standing outside. She is dangling a cardigan away from her body and looking at it with disdain">
+		</div>
+		<div class='header-image' id='header-2'>
+			<img src="images/selected/stripes.JPG" alt="photo of the author sitting under a tree wearing bright avocado print leggings and a shirt with horizontal gray and yellow stripes. She is wearing sunglasses and reading a book.">
+		</div>
+		<div class='header-image' id='header-3'>
+			<img src="images/selected/oneThing copy.JPG" alt="photo of the author wearing a blue sleeveless shirt dress with lightning bug print. She is facing the calera and holding up her middle finger." >
+		</div>
+	</div>
+
+	<div id='meta'>
+		<div id='category'>style</div>
+		<div id='title'><span class="sans-serif-numbers">9</span> Simple Rules for Dressing When Fat</div>
+		<div id='slides'><i style="color:#FA7268" class="far fa-images"></i> <span class="sans-serif-numbers">9</span> slides</div>
+		<div id='subtitle'>clothes don&apos;t have to just be hiding places</div>
+		<div id='byline'><span style="color:#4f4b4b">by</span> Miriam Zisook</div>
+		<div id='date'>June 30, 2019</div>
+
+	</div>
+
+	<div class="intro">intro text</div>
+
+	<div class="rule-ad-box" id='rule-1'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/dc-final-picks/rule1.JPG" alt="A photo of the author taken from behind, close up on her back. She is wearing a top with a print of a ruler, with buttons down th eback spelling 'f*ck it'">
+			</div> 
+			<div class='rule-number'>
+				1
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Give zero fucks in bright colors</div>
+				<div class='rule-body'>rule body...</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Pattern: Made by Rae Gemma Tank hacked for a button back. The buttons spell "f*ck it" A good size inclusive alternative is the Cashmerette Springfield. Fabric: Quilting cotton with measurement print. Because "f*ck it, measurements are just a number" Get it? : )</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			<img class='ad-img' src="images/daisyChainImages/fuckit.jpeg" alt="advertisement for the book 'The Fuck It Diet' A photo of the book with the words 'pre-order now'">
+		</div>
+	</div>
+
+	<div class="rule-ad-box" id='rule-2'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/dc-final-picks/rule2.JPG" alt="A studio photo of the author standing in front of a gray backdrop. She is wearing a short, tight red skirt and a jean jacket.">
+			</div> 
+	
+			<div class='rule-number'>
+				2
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Don't let anyone else's opinions be the boss of you</div>
+				<div class='rule-body'>rule body...</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Pattern: Self-drafted skirt, top and jacket are RTW (ready to wear, i.e. store bought). Fabric: Ponte diRoma</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+
+	</div>
+
+
+
+	<div class="rule-ad-box" id='rule-3'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/dc-final-picks/rule3.JPG" alt="A studio photo of the author standing in front of a glitter backdrop. She is wearing a short, tight green dress and pouring champagne">
+			</div> 
+	
+			<div class='rule-number'>
+				3
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Pour the Champagne anyway in a tight dress</div>
+				<div class='rule-body'>rule body...</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Pattern: Cashmerette Rivermont. Fabric: Ponte diRoma</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+
+	</div>
+
+	<div class="rule-ad-box" id='rule-4'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/dc-final-picks/rule4.JPG" alt="A studio photo of the author wearing a yellow and gray horizonta striped shirt and bright avocado print leggings. She is reading a book called 'big girl'">
+			</div> 
+	
+			<div class='rule-number'>
+				4
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Never change your stripes</div>
+				<div class='rule-body'>rule body...</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Pattern:Top is a Cashmerette Concord and leggings are Cashmerette Belmont. Fabric:Top is a cotton jersey and leggings are polyester + lycra compression tricot</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+
+	</div>
+
+	<div class="rule-ad-box" id='rule-5'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/dc-final-picks/rule5.JPG" alt="A studio photo of the author wearing leggings with chocolate chip cookie print holding a tray of cookies as if she is offering you one">
+			</div> 
+	
+			<div class='rule-number'>
+				5
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Be extremely comfortable in leggings as pants</div>
+				<div class='rule-body'>rule body...</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Pattern: Leggings are cashmerette Belmont, cardigan is Helen's Closet Blackwood, tank top is RTW. Fabric: Top is a cotton spandex and leggings are polyester + lycra compression tricot</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+
+	</div>
+
+	<div class="rule-ad-box" id='rule-6'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/dc-final-picks/rule6.JPG" alt="studio photo of the author wearing a sleeveless dress with dinosaur print. She is dangling a cardigan out at arms length with a disgusted look on her face.">
+			</div> 
+	
+			<div class='rule-number'>
+				6
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Beat the heat, bare your arms</div>
+				<div class='rule-body'>rule body...</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Pattern: Dress is a modified Made by Rae Gemma. Cashmerette Springfield is a great size inclusive alternative. The cardigan is Helen's Closet Blackwood. Fabric: The dress is quilting Cotton and the cardigan is a cotton jersey.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+	</div>
+
+		<div class="rule-ad-box" id='rule-7'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/dc-final-picks/rule7.JPG" alt="author wearing a floral print jumpsuit. She is golding an umbrella">
+			</div> 
+	
+			<div class='rule-number'>
+				7
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>"Pull off" decorative prints and bold looks</div>
+				<div class='rule-body'>rule body...</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Pattern: This is the Paper Theory Zadie Jumpsuit. Fabric: Lightweight stretch denim with coordinating store bought bias tape</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+
+	</div>
+
+	<div class="rule-ad-box" id='rule-8'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/dc-final-picks/rule8.JPG" alt="author wearing a sleeveless shirt dress with lightning bug print. She is holding an umbrella">
+			</div> 
+	
+			<div class='rule-number'>
+				8
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>You have nothing to hide</div>
+				<div class='rule-body'>rule body...</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Pattern: Grainline Alder shirt dress, a good size inlsive alternative is the Cashmerette Harrison Shirtdress. Fabric: Quilting cotton</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+
+	</div>
+
+	<div class="rule-ad-box" id='rule-9'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/dc-final-picks/rule9.JPG" alt="author wearing a green high waisted bikini">
+			</div> 
+	
+			<div class='rule-number'>
+				9
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Really, nothing at all to hide</div>
+				<div class='rule-body'>rule body...</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Pattern: Bikini top is a modified Orange Lingerie Marlborough bra and the bottoms are a modified Bella Sunshine Primrose Panty. Fabric: Swim lycra</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daisy Chain's Evil Ancestors</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<style>
+
+
+
+	@font-face {
+    font-family: "Baton";
+    src: url("fonts/BatonTurbo-Bold.woff") format('woff');
+}
+
+
+@font-face {
+    font-family: "AdelleHeavy";
+    src: url("fonts/adelle/Adelle_Heavy.woff") format('woff');
+}
+
+@font-face {
+    font-family: "AdelleLight";
+    src: url("fonts/adelle/Adelle_light.woff") format('woff');
+}
+
+
+body {
+	margin: 0;
+	font-family: AdelleLight;
+	line-height: 1.75em;
+	color: #4f4b4b;
+}
+
+a {
+	color: black;
+
+}
+	
+#nav-bar{
+	height: 6vh;
+	background-color: lightgray;
+	padding-top: 1rem;
+}
+
+.banner-ad {
+	height: 30vh;
+	width: calc(5/6*100vw);
+	/*background-color: lightgray;*/
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.header-image-row {
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	/*background-color: lightgray;*/
+	height: 42vw;
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 1rem;
+
+}
+
+.header-image {
+	/*background-color: gray;*/
+	overflow: hidden;
+}
+
+#meta {
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	/*background-color: lightgray;*/
+	height: 50vh;
+	width: calc(4/6*100vw);
+
+
+}
+
+#meta > div {
+	/*#meta div this means any div inside of meta, even if it's a grandchild, #meta>div is just direct descendent*/
+	text-align: center;
+}
+
+
+.intro {
+	margin-left:10rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	width: 50vw;
+}
+
+.rule-ad-box {
+	margin-left:10rem;
+	margin-top: 4rem;
+	margin-bottom: 1rem;
+	/*background-color: lightgray;*/
+}
+
+.rule-box {
+	width: 50vw;
+	display:inline-block;
+}
+
+.ad-box {
+	/*background-color: blue;*/
+	height: 60vh;
+	margin-left: 4rem;
+	display: inline-block;
+	width: 30vw;
+	vertical-align: top;
+	
+
+}
+
+.ad-img {
+	border: 1px solid gray;
+}
+
+
+.rule-img {
+	width: 100%;
+	background-color: orange;
+	/*height: 40vh;*/
+	margin-bottom: 1rem;
+}
+
+.rule-number, .rule-copy {
+	display: inline-block;
+}
+
+.rule-number {
+	width: 18%;
+	height: 20%;
+	vertical-align: top;
+	color: #FA7268;
+	font-family: AdelleHeavy;
+	font-size: 10rem;
+	margin-top: 3rem;
+}
+
+.rule-copy {
+	width: 80%;
+	height: 20%;
+/*	background-color: orange;
+*/	vertical-align: top;
+}
+
+
+#logo-daisy {
+	font-family: Baton;
+	font-size: 1.5rem;
+	color: #FA7268;
+	font-variant: small-caps;
+	padding-left: 1rem;
+}
+
+#logo-chain {
+	font-size: 1rem;
+	color: ##4f4b4b;
+	font-family: AdelleLight;
+}
+
+.menu-item {
+	font-family: Baton;
+	font-size: .75rem;
+	margin-left: 2rem;
+	vertical-align: center;
+}
+
+.menu-item:hover {
+	color: black;
+}
+
+img {
+	width: 100%;
+}
+
+#category {
+	color: #FA7268;
+}
+
+#title {
+	font-family: Baton;
+	font-size: 3rem;
+	line-height: 4rem;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+}
+
+#slides {
+	font-family: Baton;
+	margin-bottom: 2rem;
+
+}
+
+.sans-serif-numbers {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#subtitle {
+}
+
+#byline {
+	font-family: Baton;
+	margin: 2rem;
+	color: #FA7268;
+}
+
+#date {
+
+}
+
+
+.rule-title {
+	font-family: Baton;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+.rule-body {
+
+}
+
+.rule-about {
+	font-family: sans-serif;
+	font-size: .75rem;
+}
+
+.about-outfit {
+	color:  #FA7268;
+	font-family: Baton;
+}
+
+.rule-source {
+	color: black;
+	font-size: .75rem;
+}
+
+#big-back-button {
+	position: fixed;
+	top: 50vh;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 2rem;
+	color:white;
+	background-color: #FA7268;
+	border-radius: 5rem;
+	left: -6rem;
+	text-align: right;
+	padding: 2rem;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding-left: 6rem;
+	padding-right: 1rem;
+	
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+	<a href="index.html"><div id="big-back-button"><i class="fas fa-arrow-left"></i></div></a>
+
+	<div id="nav-bar">
+		<span class='menu-item'><i class="fas fa-bars"></i></span>
+		<span id='logo-daisy'>daisy</span><span id='logo-chain'>Chain</span>
+		<span class='menu-item'>beauty</span>
+			<span class='menu-item'>fashion</span>
+			<span class='menu-item'>wellness</span>
+			<span class='menu-item'>entertainment</span>
+			<span class='menu-item'>news</span>
+			<span class='menu-item'>dear kitty</span>
+			<span id="back-button" class="menu-item"><a href="index.html"><i style="color: #FA7268;" class="fas fa-arrow-circle-left"></i></a></span>
+			<span class='menu-item'><i style="float:right;padding-right:1rem;margin-top:.8rem" class="fas fa-search"></i></span>
+
+	</div>
+	<div class='banner-ad'>
+		<img src="images/daisyChainImages/noomAd.png" alt="banner advertisement for Noom weight loss. Caption says 'weight loss for milennials. We'll help you make a change">
+	</div>
+
+	<div class="header-image-row">
+		<!-- replace with images not divs, or set as background image -->
+		<div class='header-image' id='header-1'>
+			<img src="images/celebs/claireFoy.jpg" alt="Claire Fpy wearing a green dress with a fabric flap covering the front of her body">
+		</div>
+		<div class='header-image' id='header-2'>
+			<img src="images/celebs/beyonce.JPG" alt="photo of Beyonce wearing a jumpsuit with vertical stripes">
+		</div>
+		<div class='header-image' id='header-3'>
+			<img src="images/celebs/heidiKlum.JPG" alt="photo heidi klum wearing jeans and a denim shirt" >
+		</div>
+	</div>
+
+	<div id='meta'>
+		<div id='category'>style</div>
+		<div id='title'><span class="sans-serif-numbers">9</span> Simple Rules for Dressing When Fat</div>
+		<div id='slides'><i style="color:#FA7268" class="far fa-images"></i> <span class="sans-serif-numbers">9</span> slides</div>
+		<div id='subtitle'>Look 10 pounds slimmer by tonight</div>
+		<div id='byline'><span style="color:#4f4b4b">by</span> Miriam Zisook</div>
+		<div id='date'>June 30, 2019</div>
+
+	</div>
+	<div class="intro">Nobody wants to look fat, but there are so many myths out there about how to dress your best. Here we wade through the myths to share 9 tried and true tips for dressing to fit and flatter. Look 10 pounds thinner by tonight if you follow these wardrobe tricks.</div>
+	<div class="rule-ad-box" id='rule-1'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/celebs/selenaGomez.JPG" alt="">
+			</div> 
+			<div class='rule-number'>
+				1
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Streamline With (mono) Color, especially black</div>
+				<div class='rule-body'>
+				<div class='rule-source'>
+					<a target="_blank" href="https://www.glamour.com/gallery/how-to-dress-10-pounds-thinner">Glamour: How to Dress 10 Pounds Thinner</a>
+				</div>
+					"Look taller and trimmer by dressing monochromatically head to toe. "Lose" five pounds by matching your pants or skirt, stockings and shoes. You'll seem 10 pounds lighter if they're all black! Bright colors and prints will call unnecessary attention to your shape and make you look bigger. Is the one-color thing too tame for your taste? Slip on a pair of bright shoes to shake things up."
+				</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Selena Gomez dressed head to toe in black. She looks to chic and thin in these streamlined, mature looks.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			<img class='ad-img' src="images/daisyChainImages/bellyFat.jpg" alt="advertisement with line drawing of a belly bulge and caption '1 tip for a tiny belly, cut down on belly fat by following this one weird tip'">
+		</div>
+	</div>
+
+	<div class="rule-ad-box" id='rule-2'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/celebs/jessicaAlba.JPG" alt="">
+			</div> 
+			<div class='rule-number'>
+				2
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Go for a midi-length skirt</div>
+				<div class='rule-body'>
+				<div class='rule-source'>
+					<a target="_blank" href="https://www.whowhatwear.com/outfits-that-make-you-look-thinner/slide23">Who What Wear: 30 Summer Outfits That Make Everyone Look 10 Pounds Thinner</a>
+				</div>
+					"If your legs are one of your worry zones, you’re in luck! Midi-length skirts are perennially in style, and the combination of extra fabric and a cinch at the waist never fail to flatter your figure. Go for a hemline that hits below the kneecap to make legs look their absolute best."
+				</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> The best way to make your legs look thin is to hide them! Jessica Alba looks slender and sophisticated in this midi length skirt.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+	</div>
+
+	<div class="rule-ad-box" id='rule-3'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/celebs/claireFoy.JPG" alt="">
+			</div> 
+			<div class='rule-number'>
+				3
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Skin Tight Dresses&mdash;Might Not Be A Great Idea</div>
+				<div class='rule-body'>
+				<div class='rule-source'>
+					<a target="_blank" href="https://www.liveabout.com/styles-that-make-women-look-fat-2658614">10 Styles that Make Women Look Fat</a>
+				</div>
+					"If your legs are one of your worry zones, you’re in luck! Midi-length skirts are perennially in style, and the combination of extra fabric and a cinch at the waist never fail to flatter your figure. Go for a hemline that hits below the kneecap to make legs look their absolute best."
+				</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Claire Foy is elegantly hidden behind a cascade of fabric in this Ocscar de la Renta red carpet look.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			<img class='ad-img' src="images/daisyChainImages/medicalWeightLoss.png" alt="advertisement for medical Weight Loss'">
+		</div>
+	</div>
+
+	<div class="rule-ad-box" id='rule-4'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/celebs/beyonce.JPG" alt="">
+			</div> 
+			<div class='rule-number'>
+				4
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Avoid Horizontal Stripes</div>
+				<div class='rule-body'>
+				<div class='rule-source'>
+					<a target="_blank" href="https://www.dailymail.co.uk/femail/article-2164030/Yes-stripes-DO-make-look-fat-Unless-theyre-narrow-black-horizontal-Confused-Heres-make-work-you.html">Daily Mail, Yes: Stripes Do Make you Look Fat</a>
+				</div>
+					"For years mothers have told their daughters that horizontal stripes do the female figure no favors and that vertical ones are more flattering. As a result, many women have spent their lives avoiding horizontal hoops for fear of looking fat." "Val Watham, 53, was unconvinced by research which claimed horizontal stripes flatter the figure. She undertook her own research, dressing models in a variety of striped designs and asking members of the public to rate their appearance. The findings demonstrated that horizontal stripes do make people appear wider, while vertical stripes make people appear taller."
+				</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Beyoncé looks thin and fabulous in this jumpsuit--not because she's &*%$ Beyoncé but because of the magical optical illusion of vertical stripes.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+	</div>
+	<div class='banner-ad'>
+		<img src="images/daisyChainImages/yogurtWeightLoss.png" alt="banner advertisement for Noom weight loss. Caption says 'weight loss for milennials. We'll help you make a change" style="border:1px solid gray">
+	</div>
+
+	<div class="rule-ad-box" id='rule-5'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/celebs/devonWindsor.JPG" alt="">
+			</div> 
+			<div class='rule-number'>
+				5
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Cover up leggings with a tunic</div>
+				<div class='rule-body'>
+				<div class='rule-source'>
+					<a target="_blank" href="https://www.liveabout.com/styles-that-make-women-look-fat-2658614">10 Styles that Make Women Look Fat</a>
+				</div>
+					"Skinny jeans [and leggings] look best when worn by skinny women. Just because skinny jeans are available in all sizes doesn't mean that they're a flattering style choice. Jeans with straight legs almost always look better on short women (unless they wear a tiny size) than skinny jeans do."
+				</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> I think we can all agree celebrity model Devon WIndsor doesn't have any junk in her trunk--but if she did we definitely couldn't see it through that elegant tunic and jacket.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+	</div>
+
+<div class="rule-ad-box" id='rule-6'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/celebs/emma-roberts-4.JPG" alt="">
+			</div> 
+			<div class='rule-number'>
+				6
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Toss a light jacket over your shoulders</div>
+				<div class='rule-body'>
+				<div class='rule-source'>
+					<a target="_blank" href="https://www.whowhatwear.com/outfits-that-make-you-look-thinner/slide23">Who What Wear: 30 Summer Outfits That Make Everyone Look 10 Pounds Thinner</a>
+				</div>
+					"If your problem areas tend to reside more in your breadth—in other words, your shoulders, upper arms, and back area—tossing a light jacket across your shoulders does worlds to melt off the pounds."
+				</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Actress and singer Emma Roberts elegantly hides hides her shoulders under a denim jacket.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			
+		</div>
+	</div>
+
+
+<div class="rule-ad-box" id='rule-7'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/celebs/heidiKlum.JPG" alt="">
+			</div> 
+			<div class='rule-number'>
+				7
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Pick Simple, unadorned denim</div>
+				<div class='rule-body'>
+				<div class='rule-source'>
+					<a target="_blank" href="https://www.instyle.com/fashion/clothing/12-easy-ways-look-thinner-tonight">In Style, 12 Easy Ways to Look Thinner By Tonight</a>
+				</div>
+					"Clean, streamlined jeans are the way to go. The most flattering styles are dark and feature unembellished pockets. Avoid extra details that catch the eye and give the illusion of bulk-think twice about tags, grommets, or decorative extras. The leanest silhouettes of all: boot cut and straight leg."r arms, and back area—tossing a light jacket across your shoulders does worlds to melt off the pounds."
+				</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> Heidi klum looking effortlessly slim in head to plain denim.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+		</div>
+	</div>
+
+
+<div class="rule-ad-box" id='rule-8'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/celebs/layeringLady.JPG" alt="">
+			</div> 
+			<div class='rule-number'>
+				8
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Layer It Up&mdash;And Make-Believe</div>
+				<div class='rule-body'>
+				<div class='rule-source'>
+					<a target="_blank" href="https://www.stylecraze.com/articles/dresses-to-hide-tummy/#gref">Style Craze: How To Dress To Hide Belly Fat</a>
+				</div>
+					"Layering is another technique that magically hides it all away, shifting the focus anywhere but your tummy. Combinations like the tank top with plaid shirt; knee-length dress and a cape; trousers with a shirt and blazer or shrug etc. work pretty well to your advantage. Layers that are unbuttoned gives it a significant effect making you look taller. Make-believe in the truest sense."
+				</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> One way to hide your fat is just to hide your whole body! Let this look from an article called '5 Outfits to look Thinner in a Minute' show you how its done.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+			<img class='ad-img' src="images/daisyChainImages/bellyFatDouble.jpg" alt="advertisement for medical Weight Loss">
+		</div>
+	</div>
+
+	<div class="rule-ad-box" id='rule-9'>
+		<div class='rule-box'>
+			<div>
+				<img class='rule-img' src="images/celebs/mindyKaling.JPG" alt="">
+			</div> 
+			<div class='rule-number'>
+				9
+			</div>
+			<div class='rule-copy'>
+				<div class='rule-title'>Embrace Shapewear</div>
+				<div class='rule-body'>
+				<div class='rule-source'>
+					<a target="_blank" href="https://abcnews.go.com/GMA/shapewear-women-fake-til-make/story?id=12577634">ABC, Fake It 'Til You Make It: Best Shapewear for Women</a>
+				</div>
+					"You should try these if you have not already. They are your rescue rangers; I could not wait to get my hands on these. It basically, tucks the unflattering flab and tires back into the tummy, at least it creates the illusion. These soft, comfortable and tight-fitting undergarments come in a lot of variants, taking full control of your tummy area. You can easily get away with those body hugging dresses that were forever part of your wish list. It makes a lot of difference, especially if you make smart choices."
+				</div>
+				<div class='rule-about'><span class="about-outfit">about the outfit</span> You'd better beleive Mindy Kaling wear shapewear, you can't be a "curvy" woman in hollywood without it.</div>
+			</div>
+		</div>
+		<div class='ad-box'>
+		</div>
+	</div>
+
+
+	</div>
+
+</body>
+</html>

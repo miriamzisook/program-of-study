@@ -5,267 +5,11 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="dc-style.css">
+
+
 <style>
 
-
-
-	@font-face {
-    font-family: "Baton";
-    src: url("fonts/BatonTurbo-Bold.woff") format('woff');
-}
-
-
-@font-face {
-    font-family: "AdelleHeavy";
-    src: url("fonts/adelle/Adelle_Heavy.woff") format('woff');
-}
-
-@font-face {
-    font-family: "AdelleLight";
-    src: url("fonts/adelle/Adelle_light.woff") format('woff');
-}
-
-
-body {
-	margin: 0;
-	font-family: AdelleLight;
-	line-height: 1.75em;
-	color: #4f4b4b;
-}
-
-a {
-	color: black;
-
-}
-	
-#nav-bar{
-	height: 6vh;
-	background-color: lightgray;
-	padding-top: 1rem;
-}
-
-.banner-ad {
-	height: 30vh;
-	width: calc(5/6*100vw);
-	/*background-color: lightgray;*/
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-.header-image-row {
-	margin-left:auto;
-	margin-right: auto;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	/*background-color: lightgray;*/
-	height: 42vw;
-	padding: 1rem;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-column-gap: 1rem;
-
-}
-
-.header-image {
-	/*background-color: gray;*/
-	overflow: hidden;
-}
-
-#meta {
-	margin-left:auto;
-	margin-right: auto;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	/*background-color: lightgray;*/
-	height: 50vh;
-	width: calc(4/6*100vw);
-
-
-}
-
-#meta > div {
-	/*#meta div this means any div inside of meta, even if it's a grandchild, #meta>div is just direct descendent*/
-	text-align: center;
-}
-
-
-.intro {
-	margin-left:10rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	width: 50vw;
-}
-
-.rule-ad-box {
-	margin-left:10rem;
-	margin-top: 4rem;
-	margin-bottom: 1rem;
-	/*background-color: lightgray;*/
-}
-
-.rule-box {
-	width: 50vw;
-	display:inline-block;
-}
-
-.ad-box {
-	/*background-color: blue;*/
-	height: 60vh;
-	margin-left: 4rem;
-	display: inline-block;
-	width: 30vw;
-	vertical-align: top;
-	
-
-}
-
-.ad-img {
-	border: 1px solid gray;
-}
-
-
-.rule-img {
-	width: 100%;
-	background-color: orange;
-	/*height: 40vh;*/
-	margin-bottom: 1rem;
-}
-
-.rule-number, .rule-copy {
-	display: inline-block;
-}
-
-.rule-number {
-	width: 18%;
-	height: 20%;
-	vertical-align: top;
-	color: #FA7268;
-	font-family: AdelleHeavy;
-	font-size: 10rem;
-	margin-top: 3rem;
-}
-
-.rule-copy {
-	width: 80%;
-	height: 20%;
-/*	background-color: orange;
-*/	vertical-align: top;
-}
-
-
-#logo-daisy {
-	font-family: Baton;
-	font-size: 1.5rem;
-	color: #FA7268;
-	font-variant: small-caps;
-	padding-left: 1rem;
-}
-
-#logo-chain {
-	font-size: 1rem;
-	color: ##4f4b4b;
-	font-family: AdelleLight;
-}
-
-.menu-item {
-	font-family: Baton;
-	font-size: .75rem;
-	margin-left: 2rem;
-	vertical-align: center;
-}
-
-.menu-item:hover {
-	color: black;
-}
-
-img {
-	width: 100%;
-}
-
-#category {
-	color: #FA7268;
-}
-
-#title {
-	font-family: Baton;
-	font-size: 3rem;
-	line-height: 4rem;
-	margin-bottom: 1rem;
-	margin-top: 2rem;
-}
-
-#slides {
-	font-family: Baton;
-	margin-bottom: 2rem;
-
-}
-
-.sans-serif-numbers {
-	font-family: sans-serif;
-	font-weight: bold;
-}
-
-#subtitle {
-}
-
-#byline {
-	font-family: Baton;
-	margin: 2rem;
-	color: #FA7268;
-}
-
-#date {
-
-}
-
-
-.rule-title {
-	font-family: Baton;
-	font-size: 2rem;
-	line-height: 3rem;
-}
-
-.rule-body {
-
-}
-
-.rule-about {
-	font-family: sans-serif;
-	font-size: .75rem;
-}
-
-.about-outfit {
-	color:  #FA7268;
-	font-family: Baton;
-}
-
-.rule-source {
-	color: black;
-	font-size: .75rem;
-}
-
-#big-back-button {
-	position: fixed;
-	top: 50vh;
-	font-family: sans-serif;
-	font-weight: bold;
-	font-size: 2rem;
-	color:white;
-	background-color: #FA7268;
-	border-radius: 5rem;
-	left: -6rem;
-	text-align: right;
-	padding: 2rem;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	padding-left: 6rem;
-	padding-right: 1rem;
-	
-}
 
 
 </style>
@@ -291,7 +35,8 @@ img {
 
 	</div>
 	<div class='banner-ad'>
-		<img src="images/daisyChainImages/noomAd.png" alt="banner advertisement for Noom weight loss. Caption says 'weight loss for milennials. We'll help you make a change">
+		<div class="ad-label">advertisement</div>
+		<img style="border: 1px black solid;"src="images/daisyChainImages/noomAd.png" alt="banner advertisement for Noom weight loss. Caption says 'weight loss for milennials. We'll help you make a change">
 	</div>
 
 	<div class="header-image-row">
@@ -326,7 +71,7 @@ img {
 				1
 			</div>
 			<div class='rule-copy'>
-				<div class='rule-title'>Streamline With (mono) Color, especially black</div>
+				<div class='rule-title'>Streamline With monocolor, especially black</div>
 				<div class='rule-body'>
 				<div class='rule-source'>
 					<a target="_blank" href="https://www.glamour.com/gallery/how-to-dress-10-pounds-thinner">Glamour: How to Dress 10 Pounds Thinner</a>
@@ -337,6 +82,7 @@ img {
 			</div>
 		</div>
 		<div class='ad-box'>
+			<div class="ad-label">advertisement</div>
 			<img class='ad-img' src="images/daisyChainImages/bellyFat.jpg" alt="advertisement with line drawing of a belly bulge and caption '1 tip for a tiny belly, cut down on belly fat by following this one weird tip'">
 		</div>
 	</div>
@@ -385,6 +131,7 @@ img {
 			</div>
 		</div>
 		<div class='ad-box'>
+			<div class="ad-label">advertisement</div>
 			<img class='ad-img' src="images/daisyChainImages/medicalWeightLoss.png" alt="advertisement for medical Weight Loss'">
 		</div>
 	</div>
@@ -413,6 +160,7 @@ img {
 		</div>
 	</div>
 	<div class='banner-ad'>
+		<div class="ad-label">advertisement</div>
 		<img src="images/daisyChainImages/yogurtWeightLoss.png" alt="banner advertisement for Noom weight loss. Caption says 'weight loss for milennials. We'll help you make a change" style="border:1px solid gray">
 	</div>
 
@@ -463,7 +211,35 @@ img {
 			
 		</div>
 	</div>
-
+<div class="related">
+		<div class='related-header'>Related content</div>
+		<div class='related-grid'>
+			<div class='related-content'>
+				<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rachel-mcadams-as-regina-george-rachel-mcadams-2377254-1600-900-1533227188.jpg?resize=980:*" class='sidebar-img' alt="Regina George held aloft on the shoulders of several boys">
+				<div class=sidebar-title><a target="_blank" href="https://www.cosmopolitan.com/sex-love/quizzes/a56099/quiz-what-type-of-bitch-are-you/">What Type of B<span class='sans-serif-numbers'>*</span>tch Are You?</a></div>
+				<div class="sidebar-category">entertainment</div>
+				<div class="sidebar-author">By Hannah Smothers</div>
+			</div>
+			<div class='related-content'>
+				<img src="https://assets.vogue.com/photos/5b59fe5c1ae7f5247ec516eb/master/w_1560,c_limit/00-story-applying-concealer.jpg" class='sidebar-img' alt="2 young women with dewy skin sit on an oversized chair">
+				<div class=sidebar-title><a target="_blank" href="https://www.vogue.com/article/how-to-apply-concealer-pro-expert-guide-dark-circles-bags-blemishes"><span class='sans-serif-numbers'>5</span> Ways to Make Your Concealer Look Invisible</a></div>
+				<div class="sidebar-category">beauty</div>
+				<div class="sidebar-author">By Lauren Valenti</div>
+			</div>
+			<div class='related-content'>
+				<img src="https://peopledotcom.files.wordpress.com/2019/04/kate-hudson-6.jpg" class='sidebar-img' alt="Kate Hudson taking a mirror selfie">
+				<div class=sidebar-title><a target="_blank" href="https://people.com/health/kate-hudson-couple-pounds-from-goal-weight/">Kate Hudson Celebrates Being ‘a Couple Pounds from Goal Weight<span class='sans-serif-numbers'>!’: ‘</span>I Have Been Disciplined<span class='sans-serif-numbers'>’</span></a></div>
+				<div class="sidebar-category">health & wellness</div>
+				<div class="sidebar-author">By Julie Mazziotta</div>
+			</div>
+			<div class='related-content'>
+				<img src="https://peopledotcom.files.wordpress.com/2019/01/melissa-mccarthy-3.jpg" class='sidebar-img' alt="Melissa McCarthy on a red carpet">
+				<div class=sidebar-title><a target="_blank" href="https://www.liveabout.com/styles-that-make-women-look-fat-2658614"><span class='sans-serif-numbers'>7</span> Styles that Make Women Look Fat</a></div>
+				<div class="sidebar-category">fashion</div>
+				<div class="sidebar-author">By Paula Darnell</div>
+			</div>
+		</div>
+	</div>
 
 <div class="rule-ad-box" id='rule-7'>
 		<div class='rule-box'>
@@ -509,6 +285,7 @@ img {
 			</div>
 		</div>
 		<div class='ad-box'>
+			<div class="ad-label">advertisement</div>
 			<img class='ad-img' src="images/daisyChainImages/bellyFatDouble.jpg" alt="advertisement for medical Weight Loss">
 		</div>
 	</div>
@@ -538,6 +315,7 @@ img {
 
 
 	</div>
+
 
 </body>
 </html>

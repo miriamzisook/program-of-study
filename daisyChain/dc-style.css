@@ -268,7 +268,7 @@ img {
 
 #big-back-button {
 	position: fixed;
-	top: 50vh;
+	top: 45vh;
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 2rem;
@@ -312,4 +312,28 @@ img {
 
 .sidebar-category {
 	color: #FA7268;
+}
+
+.footer a {
+	color: gainsboro;
+}
+.footer {
+	margin-top: 4rem;
+  	padding: 4rem;
+  	background-color: #4f4b4b;
+  	color: gainsboro;
+  	font-family: Baton;
+  	font-size: .75rem;
+}
+
+.footer-text {
+	font-family: AdelleLight; 
+
+}
+
+
+.footer-line{
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #FA7268;
 }

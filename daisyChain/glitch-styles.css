@@ -263,6 +263,31 @@ body
 {
 	animation: animate .2s linear infinite;
 }
+
+@media @media(hover: none) {
+        
+	.glitchThis2:before
+	{
+		animation: animate .2s linear infinite;
+	}
+
+	.glitchThis:before
+	{
+		animation: animate .2s linear infinite;
+	}
+
+	.glitchThis2:after
+	{
+		animation: animate .2s linear infinite;
+	}
+
+	.glitchThis:after
+	{
+		animation: animate .2s linear infinite;
+	}
+
+}
+
 @keyframes animate
 {
 	0%

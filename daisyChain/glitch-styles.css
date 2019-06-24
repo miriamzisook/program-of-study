@@ -261,7 +261,7 @@ body
 }
 .glitchThis2:hover:before
 {
-	animation: animate 1s linear infinite;
+	animation: animate .2s linear infinite;
 }
 @keyframes animate
 {

@@ -212,6 +212,7 @@ body
 	background-image: url("images/dc-bad-image.png");
 	background-position: left top;
 	background-size: 200%;
+	background-repeat: no-repeat;
 }
 .glitchThis:before
 {
@@ -226,6 +227,7 @@ body
 	background-position: left top;
 	opacity: .5;
 	mix-blend-mode: hard-light;
+	background-repeat: no-repeat;
 }
 .glitchThis:hover:before
 {
@@ -244,6 +246,7 @@ body
 	background-image: url("images/dc-good-image.png");
 	background-position: right top;
 	background-size: 200%;
+	background-repeat: no-repeat;
 }
 .glitchThis2:before
 {
@@ -258,6 +261,7 @@ body
 	background-position: right top;
 	opacity: .5;
 	mix-blend-mode: hard-light;
+	background-repeat: no-repeat;
 }
 .glitchThis2:hover:before
 {
@@ -270,25 +274,25 @@ body
 	.glitchThis2:before
 	{
 		height: 40vh;
-		animation: animate .2s linear infinite;
+		animation: animate .2s linear 10;
 	}
 
 	.glitchThis:before
 	{
 		height: 40vh;
-		animation: animate .2s linear infinite;
+		animation: animate .2s linear 10;
 	}
 
 	.glitchThis2:after
 	{
 		height: 40vh;
-		animation: animate .2s linear infinite;
+		animation: animate .2s linear 10;
 	}
 
 	.glitchThis:after
 	{
 		height: 40vh;
-		animation: animate .2s linear infinite;
+		animation: animate .2s linear 10;
 	}
 
 	.about-container {

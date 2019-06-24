@@ -204,7 +204,7 @@ body
 	display:inline-block;
 	margin-left: -4px;
 }
-.glitchThis
+.glitchThis 
 {
 	position: relative;
 	width: 100%;
@@ -265,27 +265,35 @@ body
 }
 
 @media (hover: none) {
+
         
 	.glitchThis2:before
 	{
+		height: 40vh;
 		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis:before
 	{
+		height: 40vh;
 		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis2:after
 	{
+		height: 40vh;
 		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis:after
 	{
+		height: 40vh;
 		animation: animate .2s linear infinite;
 	}
 
+	.about-container {
+		top: 40vh;
+	}
 }
 
 @keyframes animate

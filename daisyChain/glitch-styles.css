@@ -196,11 +196,11 @@ body
 
 
 .leftColumn {
-	width:50%;
+	width:55%;
 	display:inline-block;
 }
 .rightColumn {
-	width:50%;
+	width:55%;
 	display:inline-block;
 	margin-left: -4px;
 }
@@ -274,25 +274,25 @@ body
 	.glitchThis2:before
 	{
 		height: 40vh;
-		animation: animate .2s linear 10;
+		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis:before
 	{
 		height: 40vh;
-		animation: animate .2s linear 10;
+		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis2:after
 	{
 		height: 40vh;
-		animation: animate .2s linear 10;
+		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis:after
 	{
 		height: 40vh;
-		animation: animate .2s linear 10;
+		animation: animate .2s linear infinite;
 	}
 
 	.about-container {

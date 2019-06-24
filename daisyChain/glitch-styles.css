@@ -264,7 +264,7 @@ body
 	animation: animate .2s linear infinite;
 }
 
-@media @media(hover: none) {
+@media (hover: none) {
         
 	.glitchThis2:before
 	{

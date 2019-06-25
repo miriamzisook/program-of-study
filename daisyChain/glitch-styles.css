@@ -334,6 +334,13 @@ mark {
 	.about-container {
 		top: 40vh;
 	}
+
+	.click-me-left {
+		top: 20%;
+	}
+	.click-me-right {
+		top: 20%;
+	}
 }
 
 @keyframes animate

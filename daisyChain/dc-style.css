@@ -27,6 +27,14 @@ a {
 
 }
 
+.click-me {
+	position: absolute;
+	top: 50%;
+	font-family: Baton;
+	text-align: center;
+	padding-top: 40%
+}
+
 #nav-bar{
 	height: 6vh;
 	background-color: lightgray;

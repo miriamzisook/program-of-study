@@ -194,16 +194,52 @@ body
 	text-align: center;
 }
 
+.image-box {
+	position: relative;
+}
 
 .leftColumn {
-	width:55%;
+	position: relative;
+	width:50%;
 	display:inline-block;
 }
 .rightColumn {
-	width:55%;
+	position: relative;
+	width:50%;
 	display:inline-block;
 	margin-left: -4px;
 }
+
+
+.click-me-left {	
+	position: absolute; 
+	top: 50%;
+	width: 50%;
+	font-size: 2rem;
+	font-family: Baton;
+	padding: 0;
+	text-align: center;
+	z-index: 10000;
+	text-decoration: underline;
+}
+
+.click-me-right {	
+	position: absolute; 
+	top: 50%;
+	left: 60%;
+	width: 50%;
+	font-size: 2rem;
+	font-family: Baton; 
+	padding: 0;
+	text-align: center;
+	z-index: 10000;
+	text-decoration: underline;
+}
+
+mark {
+	background-color: #FA7268;
+}
+
 .glitchThis 
 {
 	position: relative;

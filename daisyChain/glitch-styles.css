@@ -94,15 +94,25 @@ body
     clip: rect(4px, 9999px, 80px, 0);
   }
 }
+
 .glitch-text:after {
   content: attr(data-text);
   position: absolute;
   left: 2px;
   text-shadow: -1px 0 red;
-  top: 2rem;
-/*  clip: rect(0, 900px, 0, 0);*/
+  top: 1rem;
   animation: noise-anim 2s infinite linear alternate-reverse;
 }
+
+.glitch-text:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 1rem;
+  animation: noise-anim-2 2s infinite linear alternate-reverse;
+}
+
 
 @keyframes noise-anim-2 {
   0% {
@@ -170,16 +180,6 @@ body
   }
 }
 
-.glitch-text:before {
-  content: attr(data-text);
-  position: absolute;
-  left: -2px;
-  text-shadow: 1px 0 blue;
-  top: 0;
-  /*overflow: hidden;
-  clip: rect(0, 900px, 0, 0);*/
-  animation: noise-anim-2 2s infinite linear alternate-reverse;
-}
 
 
 
@@ -187,11 +187,10 @@ body
 	width: 100%;
 	position: absolute;
 	top: 80vh;
-	height: 100vh;
-	background-color: ghostWhite;
 	padding: 2rem;
 	margin: auto;
 	text-align: center;
+	background-color: white;
 }
 
 .image-box {
@@ -226,7 +225,7 @@ body
 .click-me-right {	
 	position: absolute; 
 	top: 50%;
-	left: 60%;
+	left: 50%;
 	width: 50%;
 	font-size: 2rem;
 	font-family: Baton; 
@@ -424,6 +423,7 @@ mark {
 */	height: 100vh;
 	margin: auto;
 	margin-top: 3rem;
+	text-align: left;
 }
 
 

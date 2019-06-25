@@ -181,6 +181,9 @@ body
 }
 
 
+.bottom-space-workaround {
+	height: 80rem;
+}
 
 
 .about-container {

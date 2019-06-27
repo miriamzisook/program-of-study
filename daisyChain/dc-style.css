@@ -14,6 +14,18 @@
 	src: url("fonts/adelle/Adelle_light.woff") format('woff');
 }
 
+@media (hover:none){
+	.menu-item {
+		display:none;
+	}
+
+	.banner-ad {
+		display: block;
+		width: 100%;
+		
+	}
+}
+
 
 body {
 	margin: 0;

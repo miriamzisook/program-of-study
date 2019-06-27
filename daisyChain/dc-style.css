@@ -51,6 +51,10 @@ p {
 	line-height: 2rem;
 }
 
+.icon {
+	padding: 1rem;
+}
+
 .click-me {
 	position: absolute;
 	top: 50%;
@@ -60,7 +64,7 @@ p {
 }
 
 #nav-bar{
-	height: 6vh;
+
 	background-color: lightgray;
 	padding-top: 1rem;
 }

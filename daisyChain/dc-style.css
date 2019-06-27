@@ -22,7 +22,15 @@
 	.banner-ad {
 		display: block;
 		width: 100%;
-		
+
+	}
+
+	.ad-box {
+		display: block;
+		width: 100%;
+	}
+	.dc-logo {
+		height: 100%;
 	}
 }
 

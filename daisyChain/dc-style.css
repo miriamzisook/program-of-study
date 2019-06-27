@@ -33,6 +33,7 @@ p {
 
 .icon {
 	padding: 1rem;
+	padding-right: 0px;
 }
 
 .click-me {
@@ -395,8 +396,8 @@ img {
 	.related {
 		margin: auto;
 		width: 100vw;
-	margin-bottom: 4rem;
-	text-align: center;
+		margin-bottom: 4rem;
+		text-align: center;
 
 }
 
@@ -415,6 +416,10 @@ img {
 
 	.rule-box{
 		width: 100%;
+	}
+
+	#logo-daisy {
+		padding-left: .5rem;
 	}
 
 

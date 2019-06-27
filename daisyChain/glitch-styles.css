@@ -29,27 +29,26 @@ body
 
 }
 
+@media (hover:hover){
+	.glitch-text:after {
+	  content: attr(data-text);
+	  position: absolute;
+	  left: 2px;
+	  text-shadow: -1px 0 red;
+	  top: 1rem;
+	  animation: noise-anim 2s infinite linear alternate-reverse;
+	}
 
+	.glitch-text:before {
+	  content: attr(data-text);
+	  position: absolute;
+	  left: -2px;
+	  text-shadow: 1px 0 blue;
+	  top: 1rem;
+	  animation: noise-anim-2 2s infinite linear alternate-reverse;
+	}
 
-.glitch-text:after {
-  content: attr(data-text);
-  position: absolute;
-  left: 2px;
-  text-shadow: -1px 0 red;
-  top: 1rem;
-  animation: noise-anim 2s infinite linear alternate-reverse;
 }
-
-.glitch-text:before {
-  content: attr(data-text);
-  position: absolute;
-  left: -2px;
-  text-shadow: 1px 0 blue;
-  top: 1rem;
-  animation: noise-anim-2 2s infinite linear alternate-reverse;
-}
-
-
 
 
 
@@ -177,7 +176,8 @@ body
 
 @media (hover: none) {
 
-        
+     
+
 	.glitchThis2:before
 	{
 		height: 40vh;

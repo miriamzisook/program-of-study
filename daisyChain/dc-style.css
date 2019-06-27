@@ -140,7 +140,6 @@ p {
 
 .ad-box {
 	/*background-color: blue;*/
-	height: 60vh;
 	margin-left: 4rem;
 	display: inline-block;
 	width: 30vw;
@@ -168,6 +167,7 @@ p {
 
 .rule-number {
 	display: inline-block;
+	height: 7rem;
 	width: 18%;
 	vertical-align: top;
 	color: #FA7268;
@@ -182,16 +182,8 @@ p {
 	font-family: Baton;
 	font-size: 3rem;
 	line-height: 3rem;
-	height: 8rem;
 	margin-bottom: 1rem;
 }
-
-.rule-copy {
-	height: 20%;
-/*	background-color: orange;
-*/	vertical-align: top;
-}
-
 
 
 #logo-daisy {
@@ -377,7 +369,7 @@ img {
 		height: 100%;
 	}
 
-	.header-image-row {
+/*	.header-image-row {
 		display: block;
 		width: 100%;
 	}
@@ -385,14 +377,15 @@ img {
 	.header-img {
 		display: block;
 		width: 100%;
-	}
+	}*/
 /*	.rule-box {
 		display: block;
 		width: 100%;
 	}*/
 	.intro {
 		display: block;
-		width: 100%;
+		width: 90%;
+		margin: auto;
 	}
 	.rule-img {
 		width: 100%;
@@ -402,6 +395,20 @@ img {
 	.related-grid {
 		display: block;
 	}
+	.rule-number, .rule-title {
+		display: block;
+	}
+
+	.rule-ad-box {
+		margin:auto;
+		width: 90%;
+	}
+
+	.rule-box{
+		width: 100%;
+	}
+
+
 }
 
 @media (hover:hover){

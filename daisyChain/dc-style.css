@@ -160,9 +160,7 @@ p {
 	/*height: 40vh;*/
 }
 
-.rule-number, .rule-copy {
-	display: inline-block;
-}
+
 
 .rule-number {
 	width: 18%;
@@ -175,7 +173,7 @@ p {
 }
 
 .rule-copy {
-	width: 80%;
+	width: 100%;
 	height: 20%;
 /*	background-color: orange;
 */	vertical-align: top;

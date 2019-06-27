@@ -363,7 +363,8 @@ img {
 
 	.ad-box {
 		display: block;
-		width: 100%;
+		width: 90%;
+		margin:auto;
 	}
 	.dc-logo {
 		height: 100%;

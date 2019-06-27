@@ -14,30 +14,6 @@
 	src: url("fonts/adelle/Adelle_light.woff") format('woff');
 }
 
-@media (hover:none){
-	.menu-item {
-		display:none;
-	}
-
-	.banner-ad {
-		display: block;
-		width: 100%;
-
-	}
-
-	.ad-box {
-		display: block;
-		width: 100%;
-	}
-	.dc-logo {
-		height: 100%;
-	}
-
-	.header-image-row {
-		display: block;
-	}
-}
-
 
 body {
 	margin: 0;
@@ -85,14 +61,12 @@ p {
 }
 
 
-
 .header-image-row {
 	margin-left:auto;
 	margin-right: auto;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	/*background-color: lightgray;*/
-	height: 42vw;
 	padding: 1rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -386,4 +360,52 @@ img {
 	padding-bottom: 2rem;
 	margin-bottom: 2rem;
 	border-bottom: 1px solid #FA7268;
+}
+
+@media (hover:none){
+	.menu-item {
+		display:none;
+	}
+
+	.banner-ad {
+		display: block;
+		width: 100%;
+
+	}
+
+	.ad-box {
+		display: block;
+		width: 100%;
+	}
+	.dc-logo {
+		height: 100%;
+	}
+
+	.header-image-row {
+		display: block;
+		width: 100%;
+	}
+
+	.header-img {
+		display: block;
+		width: 100%;
+	}
+	.rule-box {
+		display: block;
+		width: 100%;
+	}
+	.intro {
+		display: block;
+		width: 100%;
+	}
+	.rule-img {
+		width: 100%;
+		display: block;
+	}
+}
+
+@media (hover:hover){
+	.header-image-row {
+		height: 42vw;
+	}
 }

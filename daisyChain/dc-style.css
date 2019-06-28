@@ -16,6 +16,40 @@
 	src: url("fonts/adelle/Adelle_light.woff") format('woff');
 }
 
+body {
+    margin: 5%;
+    font-family: Helvetica;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+#fb-share-button {
+    background: gray;
+    border-radius: 3px;
+    font-weight: 600;
+    padding: 5px 8px;
+    display: inline-block;
+    position: static;
+}
+
+#fb-share-button:hover {
+    cursor: pointer;
+    background: dimGrey;
+}
+
+#fb-share-button svg {
+    width: 18px;
+    fill: white;
+    vertical-align: middle;
+    border-radius: 2px
+}
+
+#fb-share-button span {
+    vertical-align: middle;
+    color: white;
+    font-size: 14px;
+    padding: 0 3px
+}
 
 body {
 	margin: 0;

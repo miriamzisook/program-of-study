@@ -429,6 +429,11 @@ img {
 		padding-left: .5rem;
 	}
 
+	.footer p {
+	font-size: 1rem;
+	width: 100%;
+}
+
 
 }
 

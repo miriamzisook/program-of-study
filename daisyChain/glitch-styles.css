@@ -176,38 +176,41 @@ body
 
 @media (hover: none) {
 
+	.image-box {
+		height: 30vh;
+	}
      
 
 	.glitchThis2:before
 	{
-		height: 25vh;
+		height: 15vh;
 		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis:before
 	{
-		height: 25vh;
+		height: 15vh;
 		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis2:after
 	{
-		height: 25vh;
+		height: 15vh;
 		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis:after
 	{
-		height: 25vh;
+		height: 15vh;
 		animation: animate .2s linear infinite;
 	}
 
 
-	.click-me-left {
-		top: 20%;
+	.click-me-left a {
+		top: 18vh;
 	}
-	.click-me-right {
-		top: 20%;
+	.click-me-right a {
+		top: 18vh;
 	}
 }
 
@@ -240,7 +243,7 @@ body
 }
 
 #about-body {
-	width: 60%;
+	width: 90%;
 	background-color: white;
 	margin: auto;
 	margin-top: 3rem;

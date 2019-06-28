@@ -30,7 +30,7 @@ body
 }
 
 @media (hover:hover){
-	.glitch-text:after {
+	.glitch-text.animating:after {
 	  content: attr(data-text);
 	  position: absolute;
 	  left: 2px;
@@ -39,7 +39,7 @@ body
 	  animation: noise-anim 2s infinite linear alternate-reverse;
 	}
 
-	.glitch-text:before {
+	.glitch-text.animating:before {
 	  content: attr(data-text);
 	  position: absolute;
 	  left: -2px;

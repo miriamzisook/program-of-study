@@ -28,35 +28,40 @@
 	</style>
 
 	<script>
-
-		document.addEventListener("DOMContentLoaded", ready);
-
-		function ready(){
-			console.log("ready!")
+		window.addEventListener('load', function() {
+			console.log("Ready")
 			var onPageHandler = function(element) {
 				console.log("seen!");
 	        // A function to run once the element is on screen
-	        element.classList.remove('.glitch-text');
+	        element.classList.remove('animating');
 	        // element.classList.add('seen');
 	    };
-	}
 
-    // The IntersectionObserver API makes it easier to detect when things are onscreen, when they intersect, etc.   You can read more at https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
-    var observer = new IntersectionObserver(function(entries) {
-        if (entries[0].isIntersecting === true) // If there's an intersection
-        	setTimeout(function() {
-                onPageHandler(entries[0].target) // Run our handler
-            }, 500); // after 500ms
-    }, { threshold: [1] }); // Threshold determines how much of the element needs to be on screen before the pageHandler runs, 1 => 100%, 0 => 0%
+		// 	document.addEventListener("DOMContentLoaded", ready);
 
-   	//observer.observe(document.querySelector("#rule-title-1"));
+		// 	function ready(){
+		// 		console.log("ready!")
+		// }
 
-    document.querySelectorAll(".rule-title").forEach(function(element) {
-    	console.log("applied rule!")
-        observer.observe(element); // WHICH ONE Attach our observer so that it's watching
-    });
-    
-    //tried: node, selecting 1, in console 
+	   	//observer.observe(document.querySelector("#rule-title-1"));
+
+	    document.querySelectorAll(".glitch-text.animating").forEach(
+	    	function(element) {
+	    		console.log("Attaching observer to", element);
+		    	// The IntersectionObserver API makes it easier to detect when things are onscreen, when they intersect, etc.   You can read more at https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+			    var observer = new IntersectionObserver(function(entries) {
+			        if (entries[0].isIntersecting === true) // If there's an intersection
+			        	setTimeout(function() {
+			                onPageHandler(element) // Run our handler
+			            }, 3000); // after 500ms
+			    }, { threshold: [1] }); // Threshold determines how much of the element needs to be on screen before the pageHandler runs, 1 => 100%, 0 => 0%
+
+		    	console.log("applied rule!")
+		        observer.observe(element); // WHICH ONE Attach our observer so that it's watching
+	    	});
+	    
+	    //tried: node, selecting 1, in console 
+		});
 </script>
 
 
@@ -123,7 +128,7 @@
 					<div class='rule-number'>
 						1
 					</div>
-					<div id="rule-title-1" class='rule-title glitch-text' data-text="Streamline With monocolor, especially black">Give zero fucks in bright colors</div>
+					<div id="rule-title-1" class='rule-title glitch-text animating' data-text="Streamline With monocolor, especially black">Give zero fucks in bright colors</div>
 				</div>
 				<div>
 					<img class='rule-img' src="images/dc-final-picks/rule1.JPG" alt="A photo of the author taken from behind, close up on her back. She is wearing a top with a print of a ruler, with buttons down the back spelling 'f*ck it'">
@@ -148,7 +153,7 @@
 					<div class='rule-number'>
 						2
 					</div>
-					<div class='rule-title glitch-text' data-text="Go for a midi-length skirt">Don't let anyone else's opinions be the boss of you</div>
+					<div class='rule-title glitch-text animating' data-text="Go for a midi-length skirt">Don't let anyone else's opinions be the boss of you</div>
 				</div>
 				<div>
 					<img class='rule-img' src="images/dc-final-picks/rule2.JPG" alt="A studio photo of the author standing in front of a gray backdrop. She is wearing a short, tight red skirt and a jean jacket.">
@@ -177,7 +182,7 @@
 					<div class='rule-number'>
 						3
 					</div>
-					<div class='rule-title glitch-text' data-text="Skin tight dresses--might not be the best idea">Pour the Champagne anyway in a tight dress</div>
+					<div class='rule-title glitch-text animating' data-text="Skin tight dresses--might not be the best idea">Pour the Champagne anyway in a tight dress</div>
 				</div>
 				<div>
 					<img class='rule-img' src="images/dc-final-picks/rule3.JPG" alt="A studio photo of the author standing in front of a glitter backdrop. She is wearing a short, tight green dress and pouring champagne">
@@ -203,7 +208,7 @@
 					<div class='rule-number'>
 						4
 					</div>
-					<div class='rule-title glitch-text' data-text="Avoid horizontal stripes">Never change your stripes</div>
+					<div class='rule-title glitch-text animating' data-text="Avoid horizontal stripes">Never change your stripes</div>
 				</div>
 				<div>
 					<img class='rule-img' src="images/dc-final-picks/rule4.JPG" alt="A studio photo of the author wearing a yellow and gray horizonta striped shirt and bright avocado print leggings. She is reading a book called 'big girl'">
@@ -230,7 +235,7 @@
 					<div class='rule-number'>
 						5
 					</div>
-					<div class='rule-title glitch-text' data-text="Cover up leggings witha tunic">Be extremely comfortable in leggings as pants</div>
+					<div class='rule-title glitch-text animating' data-text="Cover up leggings witha tunic">Be extremely comfortable in leggings as pants</div>
 				</div>
 				<div>
 					<img class='rule-img' src="images/dc-final-picks/rule5.JPG" alt="A studio photo of the author wearing leggings with chocolate chip cookie print holding a tray of cookies as if she is offering you one">
@@ -256,7 +261,7 @@
 					<div class='rule-number'>
 						6
 					</div>
-					<div class='rule-title glitch-text' data-text="Toss a light jacket over your shoulders">Beat the heat, bare your arms</div>
+					<div class='rule-title glitch-text animating' data-text="Toss a light jacket over your shoulders">Beat the heat, bare your arms</div>
 				</div>
 				<div>
 					<img class='rule-img' src="images/dc-final-picks/rule6.JPG" alt="studio photo of the author wearing a sleeveless dress with dinosaur print. She is dangling a cardigan out at arms length with a disgusted look on her face.">
@@ -281,7 +286,7 @@
 					<div class='rule-number'>
 						7
 					</div>
-					<div class='rule-title glitch-text' data-text="Pick simple, unadorned denim"><span class="sans-serif-numbers">"</span>Pull off<span class="sans-serif-numbers">"</span> decorative prints and bold looks</div>
+					<div class='rule-title glitch-text animating' data-text="Pick simple, unadorned denim"><span class="sans-serif-numbers">"</span>Pull off<span class="sans-serif-numbers">"</span> decorative prints and bold looks</div>
 				</div>
 				<div>
 					<img class='rule-img' src="images/dc-final-picks/rule7.JPG" alt="author wearing a floral print jumpsuit. She is golding an umbrella">
@@ -307,7 +312,7 @@
 						<div class='rule-number'>
 							8
 						</div>
-						<div class='rule-title glitch-text' data-text="Layer It Up&mdash;And Make-Believe">Just wear one thing</div>
+						<div class='rule-title glitch-text animating' data-text="Layer It Up&mdash;And Make-Believe">Just wear one thing</div>
 					</div>
 					<div>
 						<img class='rule-img' src="images/dc-final-picks/rule8.JPG" alt="author wearing a sleeveless shirt dress with lightning bug print. She is holding an umbrella">
@@ -330,7 +335,7 @@
 						<div class='rule-number'>
 							9
 						</div>
-						<div class='rule-title glitch-text' data-text="Embrace shapewear">You have nothing to hide</div>
+						<div class='rule-title glitch-text animating' data-text="Embrace shapewear">You have nothing to hide</div>
 					</div>
 					<div>
 						<img class='rule-img' src="images/dc-final-picks/rule9.JPG" alt="author wearing a green high waisted bikini">

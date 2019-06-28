@@ -31,6 +31,7 @@
 </style>
 
 
+
 </head>
 
 
@@ -91,7 +92,7 @@
 				<div class='rule-number'>
 					1
 				</div>
-				<div class='rule-title glitch-text' data-text="Give zero fucks in bright colors">Streamline With monocolor, especially black</div>
+				<div class='rule-title glitch-text animating' data-text="Give zero fucks in bright colors">Streamline With monocolor, especially black</div>
 			</div>
 			<div>
 				<img class='rule-img' src="images/celebs/selenaGomez.JPG" alt="Selena Gomez wearing black pants and a black leather jacket and a black hat">
@@ -119,7 +120,7 @@
 				<div class='rule-number'>
 					2
 				</div>
-				<div class='rule-title glitch-text' data-text="Don't let anyone else's opinions be the boss of you">Go for a midi-length skirt</div>
+				<div class='rule-title glitch-text animating' data-text="Don't let anyone else's opinions be the boss of you">Go for a midi-length skirt</div>
 			</div>
 			<div>
 				<img class='rule-img' src="images/celebs/jessicaAlba.JPG" alt="Jessica Alba wearing a flowy ankle length floral skirt and a white tank top">
@@ -145,7 +146,7 @@
 				<div class='rule-number'>
 					3
 				</div>
-				<div class='rule-title glitch-text' data-text="Pour the champagne anyway in a tight dress">Skin Tight Dresses&mdash;Might Not Be A Great Idea</div>
+				<div class='rule-title glitch-text animating' data-text="Pour the champagne anyway in a tight dress">Skin Tight Dresses&mdash;Might Not Be A Great Idea</div>
 			</div>
 			<div>
 				<img class='rule-img' src="images/celebs/claireFoy.JPG" alt="Claire Foy on a red carpet wearing a green dress which has a loose fabric flap that hangs in front of most of her body">
@@ -175,7 +176,7 @@
 				<div class='rule-number'>
 					4
 				</div>
-				<div class='rule-title glitch-text' data-text="Never change your stripes">Avoid Horizontal Stripes</div>
+				<div class='rule-title glitch-text animating' data-text="Never change your stripes">Avoid Horizontal Stripes</div>
 			</div>
 			<div>
 				<img class='rule-img' src="images/celebs/beyonce.JPG" alt="Beyonce wearing a vertical black and white striped jumpsuit">
@@ -206,7 +207,7 @@
 				<div class='rule-number'>
 					5
 				</div>
-				<div class='rule-title glitch-text' data-text="Be extremely comfortable in leggings as pants">Cover up leggings with a tunic</div>
+				<div class='rule-title glitch-text animating' data-text="Be extremely comfortable in leggings as pants">Cover up leggings with a tunic</div>
 			</div>
 			<div>
 				<img class='rule-img' src="images/celebs/devonWindsor.JPG" alt="Celebrity model Devin Windsor wearing leggings with a long blue faux fur jacket over a white tunic">
@@ -234,7 +235,7 @@
 				<div class='rule-number'>
 					6
 				</div>
-				<div class='rule-title glitch-text' data-text="Beat the heat, bare your arms">Toss a light jacket over your shoulders</div>
+				<div class='rule-title glitch-text animating' data-text="Beat the heat, bare your arms">Toss a light jacket over your shoulders</div>
 			</div>
 			<div>
 				<img class='rule-img' src="images/celebs/emma-roberts-4.JPG" alt="Emma Roberts wearng a denim jacket over a sundress">
@@ -290,7 +291,7 @@
 				<div class='rule-number'>
 					8
 				</div>
-				<div class='rule-title glitch-text' data-text="You have nothing to hide">Layer It Up&mdash;And Make-Believe</div>
+				<div class='rule-title glitch-text animating' data-text="You have nothing to hide">Layer It Up&mdash;And Make-Believe</div>
 			</div>
 			<div>
 				<img class='rule-img' src="images/celebs/layeringLady.JPG" alt="A thin red-haired woman wearing multiple layers of baggy sweaters, a jacket and a scarf">
@@ -317,7 +318,7 @@
 				<div class='rule-number'>
 					9
 				</div>
-				<div class='rule-title glitch-text' data-text="Really, nothing at all to hide">Embrace Shapewear</div>
+				<div class='rule-title glitch-text animating' data-text="Really, nothing at all to hide">Embrace Shapewear</div>
 			</div>
 			<div>
 				<img class='rule-img' src="images/celebs/mindyKaling.JPG" alt="Mindy Kaling getting ready. She is wearing white shapewear botoms and a long line bra top and putting on deodorant">
@@ -389,6 +390,40 @@
   gtag('config', 'UA-143021785-1');
 </script>
 
+<script>
+		window.addEventListener('load', function() {
+			console.log("Ready")
+			var onPageHandler = function(element) {
+				console.log("seen!");
+	        // A function to run once the element is on screen
+	        element.classList.remove('animating');
+	        // element.classList.add('seen');
+	    };
+
+	// 	document.addEventListener("DOMContentLoaded", ready);
+
+	// 	function ready(){
+	// 		console.log("ready!")
+	// }
+
+    // The IntersectionObserver API makes it easier to detect when things are onscreen, when they intersect, etc.   You can read more at https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+    var observer = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting === true) // If there's an intersection
+        	setTimeout(function() {
+                onPageHandler(entries[0].target) // Run our handler
+            }, 3000); // after 500ms
+    }, { threshold: [1] }); // Threshold determines how much of the element needs to be on screen before the pageHandler runs, 1 => 100%, 0 => 0%
+
+   	//observer.observe(document.querySelector("#rule-title-1"));
+
+    document.querySelectorAll(".glitch-text.animating").forEach(function(element) {
+    	console.log("applied rule!")
+        observer.observe(element); // WHICH ONE Attach our observer so that it's watching
+    });
+    
+    //tried: node, selecting 1, in console 
+		});
+</script>
 
 </body>
 </html>

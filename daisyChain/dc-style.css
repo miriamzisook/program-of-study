@@ -23,11 +23,37 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.socials {
+	position: fixed;
+	top: 90vh;
+	left: 90vw;
+}
+
+.pin-logo {
+	width: 18px;
+	vertical-align: middle;
+}
+
+#pin-it {
+	background-color: gray;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 3px 6px;
+	margin: 5px;
+	border-radius: 3px;
+}
+
+#pin-it:hover{
+	background: dimGray;
+}
+
 #fb-share-button {
+	vertical-align:middle;
+	display: inline-block;
     background: gray;
     border-radius: 3px;
     font-weight: 600;
-    padding: 5px 8px;
+    padding: 3px 6px;
     display: inline-block;
     position: static;
 }
@@ -467,6 +493,14 @@ img {
 	font-size: 1rem;
 	width: 100%;
 }
+
+	.socials {
+		position: fixed;
+		top: 90vh;
+		left: 80vw;
+	}
+
+
 
 
 }

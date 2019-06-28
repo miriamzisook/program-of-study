@@ -465,6 +465,12 @@ img {
 		margin:auto;
 	}
 
+	.intro-ad-box {
+		display: block;
+		width: 90%;
+		margin:auto;
+	}
+
 
 /*	.header-image-row {
 		display: block;

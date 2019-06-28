@@ -1,20 +1,5 @@
 
 
-@font-face {
-	font-family: "Baton";
-	src: url("fonts/BatonTurbo-Bold.woff") format('woff');
-}
-
-
-@font-face {
-	font-family: "AdelleHeavy";
-	src: url("fonts/adelle/Adelle_Heavy.woff") format('woff');
-}
-
-@font-face {
-	font-family: "AdelleLight";
-	src: url("fonts/adelle/Adelle_light.woff") format('woff');
-}
 
 body {
     margin: 5%;
@@ -50,7 +35,7 @@ body {
 #fb-share-button {
 	vertical-align:middle;
 	display: inline-block;
-    background: #8b9dc3;
+    /*background: #8b9dc3;*/
     border-radius: 3px;
     font-weight: 600;
     padding: 3px 6px;
@@ -60,7 +45,7 @@ body {
 
 #fb-share-button:hover {
     cursor: pointer;
-    background: dimGrey;
+    /*background: dimGrey;*/
 }
 
 #fb-share-button svg {

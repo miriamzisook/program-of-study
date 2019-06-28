@@ -29,7 +29,10 @@ body {
 	left: 90vw;
 }
 
-
+.pin-logo{
+	width: 18px;
+	vertical-align: middle;
+}
 
 #pin-it {
 	background-color: gray;
@@ -47,7 +50,7 @@ body {
 #fb-share-button {
 	vertical-align:middle;
 	display: inline-block;
-    background: gray;
+    background: #8b9dc3;
     border-radius: 3px;
     font-weight: 600;
     padding: 3px 6px;

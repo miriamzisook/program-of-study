@@ -208,9 +208,11 @@ body
 
 	.click-me-left a {
 		top: 18vh;
+		font-size: 1rem;
 	}
 	.click-me-right a {
 		top: 18vh;
+		font-size: 1rem;
 	}
 }
 

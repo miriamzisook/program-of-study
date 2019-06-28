@@ -108,7 +108,7 @@ p {
 
 #nav-bar{
 	background-color: lightgray;
-	padding-top: 1rem;
+	padding-top: 1.5rem;
 	width: 100%;
 	padding-bottom: 1rem;
 }
@@ -186,6 +186,7 @@ p {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	width: 50vw;
+	display: inline-block;
 }
 
 .rule-ad-box {
@@ -200,11 +201,19 @@ p {
 	display:inline-block;
 }
 
+.intro-ad-box{
+	margin-left: 4rem;
+	display: inline-block;
+	width: 22vw;
+	vertical-align: top;
+}
+
+
 .ad-box {
 	/*background-color: blue;*/
 	margin-left: 4rem;
 	display: inline-block;
-	width: 30vw;
+	width: 22vw;
 	vertical-align: middle;
 	
 
@@ -248,29 +257,44 @@ p {
 }
 
 
-#logo-daisy {
-	font-family: Baton;
-	font-size: 2.25rem;
-	color: #FA7268;
-	font-variant: small-caps;
-	padding-left: 1rem;
-}
 
 #logo-chain {
 	font-size: 1.75rem;
 	color: #4f4b4b;
 	font-family: AdelleLight;
+	text-decoration: none;
 }
+
+#logo-daisy {
+	font-family: Baton;
+	font-size: 2.6rem;
+	color: #FA7268;
+	font-variant: small-caps;
+	padding-left: 1rem;
+	text-decoration: none;
+}
+
+.dc-logo {
+		display: inline-block;
+	}
+
 
 .menu-item, .menu-item a {
 	font-family: Baton;
 	color: #4f4b4b;
 	font-size: 1rem;
-	margin-left: 2rem;
-	vertical-align: center;
-	text-decoration: none;
+	margin-left: 1.5rem;
+	display: inline-block;
+	
 }
 
+.menu-item {
+	padding-bottom: .5rem;
+}
+
+#nav-bar a {
+	text-decoration: none;
+}
 
 
 
@@ -417,7 +441,14 @@ img {
 	border-bottom: 1px solid #FA7268;
 }
 
-@media (hover:none){
+@media (max-width: 1000px)
+{
+	.menu-item {
+		display:none;
+	}
+}
+
+@media (hover:none) {
 	.menu-item {
 		display:none;
 	}
@@ -433,9 +464,7 @@ img {
 		width: 90%;
 		margin:auto;
 	}
-	.dc-logo {
-		height: 100%;
-	}
+
 
 /*	.header-image-row {
 		display: block;
@@ -450,6 +479,7 @@ img {
 		display: block;
 		width: 100%;
 	}*/
+
 	.intro {
 		display: block;
 		width: 90%;

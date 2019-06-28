@@ -8,6 +8,22 @@
 
 
 	<style>
+		
+@font-face {
+	font-family: "Baton";
+	src: url("fonts/BatonTurbo-Bold.woff") format('woff');
+}
+
+
+@font-face {
+	font-family: "AdelleHeavy";
+	src: url("fonts/adelle/Adelle_Heavy.woff") format('woff');
+}
+
+@font-face {
+	font-family: "AdelleLight";
+	src: url("fonts/adelle/Adelle_light.woff") format('woff');
+}
 
 
 	</style>
@@ -19,12 +35,7 @@
 
 	<script>
 
-		$(document).ready(function() {
-			$('body').hide();
-			$(window).on('load', function() {
-				$('body').show();
-			});
-		});
+		
 	// https://codepen.io/anon/pen/ydPwVB
 	var fbButton = document.getElementById('fb-share-button');
 	var url =  window.location.href;

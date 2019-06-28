@@ -180,25 +180,25 @@ body
 
 	.glitchThis2:before
 	{
-		height: 40vh;
+		height: 25vh;
 		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis:before
 	{
-		height: 40vh;
+		height: 25vh;
 		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis2:after
 	{
-		height: 40vh;
+		height: 25vh;
 		animation: animate .2s linear infinite;
 	}
 
 	.glitchThis:after
 	{
-		height: 40vh;
+		height: 25vh;
 		animation: animate .2s linear infinite;
 	}
 

@@ -184,25 +184,25 @@ body
 	.glitchThis2:before
 	{
 		height: 15vh;
-		animation: animate .2s linear infinite;
+		animation: animate .2s linear 16;
 	}
 
 	.glitchThis:before
 	{
 		height: 15vh;
-		animation: animate .2s linear infinite;
+		animation: animate .2s linear 12;
 	}
 
 	.glitchThis2:after
 	{
 		height: 15vh;
-		animation: animate .2s linear infinite;
+		animation: animate .2s linear 20;
 	}
 
 	.glitchThis:after
 	{
 		height: 15vh;
-		animation: animate .2s linear infinite;
+		animation: animate .2s linear 10;
 	}
 
 

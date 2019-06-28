@@ -29,10 +29,7 @@ body {
 	left: 90vw;
 }
 
-.pin-logo {
-	width: 18px;
-	vertical-align: middle;
-}
+
 
 #pin-it {
 	background-color: gray;
@@ -40,7 +37,7 @@ body {
 	vertical-align: middle;
 	padding: 3px 6px;
 	margin: 5px;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 #pin-it:hover{

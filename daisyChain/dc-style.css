@@ -500,7 +500,9 @@ img {
 		left: 80vw;
 	}
 
-
+	.header-image-row {
+		height: 42vw;
+	}
 
 
 }

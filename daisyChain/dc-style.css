@@ -10,8 +10,14 @@ body {
 
 .socials {
 	position: fixed;
-	top: 90vh;
+	top: 93vh;
 	left: 90vw;
+}
+
+.pinterest-share-button {
+	display: inline-block;
+    top: 4px;
+    position: relative;
 }
 
 .pin-logo{

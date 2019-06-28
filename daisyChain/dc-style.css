@@ -249,14 +249,14 @@ p {
 
 
 
-#logo-chain {
+.logo-chain {
 	font-size: 1.75rem;
 	color: #4f4b4b;
 	font-family: AdelleLight;
 	text-decoration: none;
 }
 
-#logo-daisy {
+.logo-daisy {
 	font-family: Baton;
 	font-size: 2.6rem;
 	color: #FA7268;
@@ -529,6 +529,10 @@ img {
 
 	.header-image-row {
 		height: 42vw;
+	}
+
+	#big-back-button {
+		display:none;
 	}
 
 

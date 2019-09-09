@@ -1,0 +1,17 @@
+---
+layout: project
+title: 9 Simple Rules for Dressing When Fat
+subtitle: remaking my relationship to beauty standards and fashion
+image: "images/oneThing.JPG"
+color: "purple"
+---
+
+Shopping for clothes has always been an emotionally loaded experience for me. I've cried in a lot of retail fitting rooms, and I know I'm not the only one. So many of the moments and milestones that should have been joyful for me were spent obsessing over what to wear and then feeling uncomfortable in my skin and in my clothes, like that time I cried getting ready for my high school graduation because I hated how I looked in my dress, instead of because I was going to miss my friends. Messages from my family and from the culture about how I am supposed to look and dress drowned out my own voice and style. How to dress "flattering" was the only rulebook I had, and it didn't leave any room at all for self-expression or for fun.
+
+For most of my adult life I didn't wear sleeveless tops or shorts. As of last summer, while I'd slowly pushed myself year after year to get comfortable showing my body more, I still almost never had the guts to leave my home in shorts and a tank top, I always needed a little extra coverage as a security blanket. As a camp counselor last summer I looked around and noticed I was among the fattest counselors. I decided something: I was not going to let the young girls around me see their fat counselor hide her body and sweat in the heat. I decided that whatever insecurity and discomfort I was feeling, my position as a role model was more important to me than looking cute in shorts. So, I wore shorts and tanks all summer long. I didn't have to believe I looked cute, but I did have to sell it to the kids around me. When I felt the urge to cover up I realized I was fighting a new battle. Rather than arguing with myself about whether I looked good, I had a much better standard to guide my clothing choices.
+
+And being a role model wasn't the only "better standard." Turns out there were lots of them. I could be more comfortable, have more fun, or spend more time doing other things. I began to imagine that rather than waiting to feel attractive enough, thin enough, or confident enough, I could give myself new reasons to push back against my mean internal monologue when I get dressed in the morning.
+
+Armed with the motivation to push back against the rules and standards that have governed the first three decades of my life, the skills to make myself a new wardrobe, and the insight that there are standards other than those given to me by family and culture by which I can assess an outfit, a few months ago I decided to make a list of the fashion rules I felt holding me back and make myself outfits to push back against those rules. I chose to make the outfits because for me making clothes is a way to withhold my money from an industry that wants me to feel bad about my body so I'll buy more, take control over style and fit, and to stop spending time and money navigating the absurdity of women's clothing sizes
+
+[These articles](http://pos.miriamzisook.com/daisyChain) represent the [standard "how to dress flattering" advice](http://pos.miriamzisook.com/daisyChain/evilTwin.html) our culture has to offer women, alongside the [story of my own journey](http://pos.miriamzisook.com/daisyChain/daisyChain.html) to remake those standards and my relationship to them. Whether you choose to make or buy clothes, there are ways to remake your standards.

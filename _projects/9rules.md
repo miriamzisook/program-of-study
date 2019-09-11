@@ -5,6 +5,7 @@ subtitle: remaking my relationship to beauty standards and fashion
 image: "images/oneThing.JPG"
 color: "purple"
 ---
+<img src="/images/oneThing.jpg" width="45%">
 
 Shopping for clothes has always been an emotionally loaded experience for me. I've cried in a lot of retail fitting rooms, and I know I'm not the only one. So many of the moments and milestones that should have been joyful for me were spent obsessing over what to wear and then feeling uncomfortable in my skin and in my clothes, like that time I cried getting ready for my high school graduation because I hated how I looked in my dress, instead of because I was going to miss my friends. Messages from my family and from the culture about how I am supposed to look and dress drowned out my own voice and style. How to dress "flattering" was the only rulebook I had, and it didn't leave any room at all for self-expression or for fun.
 

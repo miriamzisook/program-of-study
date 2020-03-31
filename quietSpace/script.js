@@ -1,9 +1,5 @@
 window.onload = function () {
     "use strict";
-    // var paths = document.getElementsByTagName('path');
-    // var visualizer = document.getElementById('visualizer');
-    // var mask = visualizer.getElementById('mask');
-    //var h = document.getElementsByTagName('h1')[0];
     var path;
     var report = 0;
     
@@ -12,8 +8,6 @@ window.onload = function () {
         //https://bugzilla.mozilla.org/show_bug.cgi?id=965483
         //https://support.mozilla.org/en-US/questions/984179
         window.persistAudioStream = stream;
-        //h.innerHTML = "Thanks";
-        //h.setAttribute('style', 'opacity: 0;');
         var audioContent = new AudioContext();
         var audioStream = audioContent.createMediaStreamSource( stream );
         var analyser = audioContent.createAnalyser();
@@ -21,28 +15,6 @@ window.onload = function () {
         analyser.fftSize = 1024;
 
         var frequencyArray = new Uint8Array(analyser.frequencyBinCount);
-        //visualizer.setAttribute('viewBox', '0 0 255 255');
-      
-        //Through the frequencyArray has a length longer than 255, there seems to be no
-        //significant data after this point. Not worth visualizing.
-        // for (var i = 0 ; i < 255; i++) {
-        //     path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-        //     path.setAttribute('stroke-dasharray', '4,1');
-        //     mask.appendChild(path);
-        // }
-        // var doDrawOG = function () {
-        //     //console.log("drawing!");
-        //     requestAnimationFrame(doDrawOG);
-        //     analyser.getByteFrequencyData(frequencyArray);
-        //     console.log(frequencyArray[0]);
-        //     var adjustedLength;
-        //     for (var i = 0 ; i < 255; i++) {
-        //        adjustedLength = Math.floor(frequencyArray[i]) - (Math.floor(frequencyArray[i]) % 5);
-        //         paths[i].setAttribute('d', 'M '+ (i) +',255 l 0,-' + adjustedLength);
-        //     }
-
-        // }
-        // doDrawOG();
 
         var doDraw = function () {
             //console.log("drawing!");
@@ -55,20 +27,11 @@ window.onload = function () {
             document.getElementById("viz-box").style.height = 60 + frequencyArray[0] + "px";
             document.getElementById("viz-box").style.borderRadius = 30 + frequencyArray[0]/2 + "px";
 
-            // var adjustedLength;
-            // for (var i = 0 ; i < 255; i++) {
-            //    adjustedLength = Math.floor(frequencyArray[i]) - (Math.floor(frequencyArray[i]) % 5);
-            //     paths[i].setAttribute('d', 'M '+ (i) +',255 l 0,-' + adjustedLength);
-            // }
-
-
-
         }
         doDraw();
     }
 
     var soundNotAllowed = function (error) {
-        //h.innerHTML = "You must allow your microphone.";
         console.log(error);
     }
 

@@ -15,18 +15,28 @@ window.onload = function () {
         analyser.fftSize = 1024;
 
         var frequencyArray = new Uint8Array(analyser.frequencyBinCount);
+        analyser.getByteTimeDomainData(frequencyArray);
+
 
         var doDraw = function () {
-            //console.log("drawing!");
             requestAnimationFrame(doDraw);
             analyser.getByteFrequencyData(frequencyArray);
-            console.log(frequencyArray[0]);
-            document.getElementById("viz-box").innerHTML = frequencyArray[0];
-            document.getElementById("viz-box").style.backgroundColor = "blue";
-            document.getElementById("viz-box").style.width = 60 + frequencyArray[0] + "px";
-            document.getElementById("viz-box").style.height = 60 + frequencyArray[0] + "px";
-            document.getElementById("viz-box").style.borderRadius = 30 + frequencyArray[0]/2 + "px";
 
+            var arrSum = function(arr){
+                return arr.reduce(function(a,b){
+                return a + b
+                }, 0);
+            }
+            var averageVol = arrSum(frequencyArray)/512;
+
+            var size = averageVol * 100; 
+            //var size = 100 + frequencyArray[0]*10;
+
+            //document.getElementById("viz-box").innerHTML = frequencyArray[0];
+            document.getElementById("viz-box").style.backgroundColor = "blue";
+            document.getElementById("viz-box").style.width = size + "px";
+            document.getElementById("viz-box").style.height = size + "px";
+            document.getElementById("viz-box").style.borderRadius = size/2 + "px";
         }
         doDraw();
     }

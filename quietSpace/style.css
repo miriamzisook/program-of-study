@@ -1,34 +1,123 @@
 html, body{
-width: 100vw;
-height: 100vh;
-
+	width: 100vw;
+	height: 100vh;
+	background-color: #0f0f1f;
 }
 
-svg{
-display: block;
-width: 100%;
-height: 100%;
-padding: 0;
-margin: 0;
-position:absolute;
-
+h1 {
+	font-size: 2em;
+	color: gold;
+	padding: 1em;
 }
 
-.sampleSVG {
+.point {
+	color: blue;
+}
+
+#plot {
 	position: absolute;
-	left: 500vw;
+	width: 80vw;
+	height: 80vh;
+	background-color: white;
+	display: none;
 }
 
-path{
-stroke-linecap: square;
-stroke: white;
-stroke-width: 0.5px;
+#my-breath {
+	color: red;
+	font-size: 2em;
+	position: absolute;
+	left: 30vw;
+	top: 30vh;
+	animation: 
+		leftright infinite 180s cubic-bezier(.39,.0,.63,1),
+		updown infinite 180s cubic-bezier(.39,.0,.63,1);
 }
 
-#viz-box{
-	text-align: center;
-	font-size: 3em;
-	vertical-align: middle;
-	color: white;
-	margin: auto;
+
+
+ul.fireflies{
+	list-style:none; 
+}
+
+li{
+	background-size: cover;
+	background-image: url(firefly2.png);
+	position:absolute;
+	width:100px;
+	height:100px;
+	animation: 
+		leftright infinite cubic-bezier(.39,.0,.63,1),
+		updown infinite 1.25s cubic-bezier(.39,.0,.63,1),
+		pulse infinite cubic-bezier(.39,.0,.63,1);
+}
+li:nth-of-type(1){
+	animation-delay:-30s;
+	animation-duration: 100s, 60s, 14s;
+	animation-fill-mode:backwards, backwards 
+}
+
+li:nth-of-type(2){
+	animation-delay:-40s;
+	animation-duration:100s, 60s, 14s;
+	animation-fill-mode:backwards, backwards 
+}
+li:nth-of-type(3){
+	animation-delay:-20s;
+	animation-duration:120s, 80s, 14s;
+	animation-fill-mode:backwards, backwards
+}
+li:nth-of-type(4){
+	animation-delay:-70s;
+	animation-duration:140s, 100s, 14s;
+}
+li:nth-of-type(5){
+	animation-delay: -20s;
+	animation-duration:180s, 200s, 14s;
+	animation-fill-mode:backwards, backwards;
+}
+li:nth-of-type(6){
+	animation-delay:-60s;
+	animation-duration: 100s, 60s, 14s;
+	animation-fill-mode:backwards, backwards 
+}
+
+li:nth-of-type(7){
+	animation-delay:-75s;
+	animation-duration:100s, 60s, 14s;
+	animation-fill-mode:backwards, backwards 
+}
+li:nth-of-type(8){
+	animation-delay:-10s;
+	animation-duration:120s, 80s, 14s;
+	animation-fill-mode:backwards, backwards
+}
+li:nth-of-type(9){
+	animation-delay:-80s;
+	animation-duration:140s, 100s, 14s;
+}
+li:nth-of-type(10){
+	animation-delay: -50s;
+	animation-duration:180s, 200s, 14s;
+	animation-fill-mode:backwards, backwards;
+}
+
+@keyframes leftright {
+	0%, 100%{left:20%;}
+	16.666%	{left:90%;}
+	33.333% {left:10%;}
+	50%			{left:50%;}
+	66.666%	{left:70%;}
+	83.333% {left:40%;}
+}
+
+@keyframes updown {
+	0%, 100%{top:0px;}
+	25%{top:70%; }
+	50%{top:50%;}
+	75%{top:70%;}
+}
+@keyframes pulse {
+	0% {width:10px;height:10px;}
+	40% {width:60px; height:60px;}
+	100% {width:10px;height:10px;}
 }

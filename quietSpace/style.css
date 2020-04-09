@@ -10,29 +10,6 @@ h1 {
 	padding: 1em;
 }
 
-.point {
-	color: blue;
-}
-
-#plot {
-	position: absolute;
-	width: 80vw;
-	height: 80vh;
-	background-color: white;
-	display: none;
-}
-
-#my-breath {
-	color: red;
-	font-size: 2em;
-	position: absolute;
-	left: 30vw;
-	top: 30vh;
-	animation: 
-		leftright infinite 180s cubic-bezier(.39,.0,.63,1),
-		updown infinite 180s cubic-bezier(.39,.0,.63,1);
-}
-
 
 
 ul.fireflies{
@@ -43,11 +20,11 @@ li{
 	background-size: cover;
 	background-image: url(firefly2.png);
 	position:absolute;
-	width:100px;
-	height:100px;
+	width:60px;
+	height:60px;
 	animation: 
 		leftright infinite cubic-bezier(.39,.0,.63,1),
-		updown infinite 1.25s cubic-bezier(.39,.0,.63,1),
+		updown infinite cubic-bezier(.39,.0,.63,1),
 		pulse infinite cubic-bezier(.39,.0,.63,1);
 }
 li:nth-of-type(1){
@@ -105,7 +82,7 @@ li:nth-of-type(10){
 	0%, 100%{left:20%;}
 	16.666%	{left:90%;}
 	33.333% {left:10%;}
-	50%			{left:50%;}
+	50%		{left:50%;}
 	66.666%	{left:70%;}
 	83.333% {left:40%;}
 }

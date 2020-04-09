@@ -2,11 +2,7 @@
 <html>
 
 <head>
-    <meta content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel='stylesheet' href='style.css'>
-	<title>Quiet Space</title> 
-
+    <title></title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js'></script>
     <style>
         #me {
@@ -19,39 +15,26 @@
             background-size: cover;
             background-image: url(firefly2.png);
             position: absolute;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             
         }
 
         .animate {
             animation: 
-                pulseMe 1 ease-in-out;
+                pulse 1 ease-in-out;
         }
 
-        @keyframes pulseMe {
-            0% {width:300px;height:300px;}
+        @keyframes pulse {
+            0% {width:200px;height:200px;}
             60% {width:50px; height:50px;}
-            100% {width:300px;height:300px;}
+            100% {width:200px;height:200px;}
         }
 
     </style>
 </head>
 
 <body>
-	<h1>take a breath</h1>
-	<ul class="fireflies">
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
     <div id="me"></div>
     <canvas id="myChart" width="100vw" height="100vh" style="display: none"></canvas>
 
